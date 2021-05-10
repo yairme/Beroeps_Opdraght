@@ -22,7 +22,7 @@ public class Enemy_AI : MonoBehaviour
         Vector2 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-        if (Vector2.Distance(transform.position, target.position) <= 0.2f)
+        if (Vector2.Distance(transform.position, target.position) <= 0.4f)
         {
             GetNextWaypoint();
         }
@@ -33,7 +33,9 @@ public class Enemy_AI : MonoBehaviour
         if (wavepointIndex >= WayPoints.wpoints.Length - 1)
         {
             Destroy(gameObject);
+            return;
         }
+
         wavepointIndex++;
         target = WayPoints.wpoints[wavepointIndex];
     }
