@@ -15,6 +15,6 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         Money = startMoney;
-        Lives = startMoney;
+        Lives = startLives;
     }
 }

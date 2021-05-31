@@ -57,7 +57,12 @@ public class Enemy_AI : MonoBehaviour
         {
             GetNextWaypoint();
         }
+
+        Vector3 dirL = WayPoints.wpoints[wavepointIndex].position - transform.position;
+        float angle = Mathf.Atan2(dirL.y, dirL.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
+
 
     void GetNextWaypoint()
     {
