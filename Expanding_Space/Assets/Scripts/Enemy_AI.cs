@@ -1,27 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_AI : MonoBehaviour
 {
-    //Base class/AI for the enemies.
-    public float speed = 10f;
 
-    public int health = 100;
+    public float startSpeed = 10f;
+
+    [HideInInspector]
+    public float speed;
+
+    public int startHealth = 100;
+    private float health;
 
     public int value = 25;
+
+
+    [Header("Unity stuff")]
+    public Image healthBar;
 
     protected Transform target;
     protected int wavepointIndex = 0;
 
     private void Start()
     {
+        speed = startSpeed;
         target = WayPoints.wpoints[0];
     }
 
     public void TakeDamage (int amount)
     {
         health -= amount;
+
+        healthBar.fillAmount = health / startHealth;
         
         if (health <= 0)
         {
