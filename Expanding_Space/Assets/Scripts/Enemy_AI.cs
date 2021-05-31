@@ -7,6 +7,10 @@ public class Enemy_AI : MonoBehaviour
     //Base class/AI for the enemies.
     public float speed = 10f;
 
+    public int health = 100;
+
+    public int value = 25;
+
     protected Transform target;
     protected int wavepointIndex = 0;
 
@@ -17,25 +21,9 @@ public class Enemy_AI : MonoBehaviour
 
     public void TakeDamage (int amount)
     {
-
-        //Enemys types HP
-        Enemy a = new Enemy();
-        a.HP = 100;
-        Enemy b = new Enemy();
-        b.HP = 250;
-        Enemy c = new Enemy();
-        c.HP = 500;
-
-        //Array
-        int[] HPtypes = { a.HP, b.HP, c.HP };
-
-        //Loop
-        for (int i = 0; i < HPtypes.Length; i++)
-        {
-            HPtypes[i] -= amount;
-        }  
+        health -= amount;
         
-        if (HPtypes[0] <= 0 || HPtypes[1] <= 0 || HPtypes[2] <= 0)
+        if (health <= 0)
         {
             Die();
         }
@@ -43,22 +31,8 @@ public class Enemy_AI : MonoBehaviour
 
     void Die()
     {
-        //Enemy Types Money
-        Enemy a = new Enemy();
-        a.Value = 10;
-        Enemy b = new Enemy();
-        b.Value = 25;
-        Enemy c = new Enemy();
-        c.Value = 50;
-
-        //MoneyType
-        int[] MType = { a.Value, b.Value, c.Value };
-
-        //Loop
-        for (int i = 0; i < MType.Length; i++)
-        {
-            PlayerStats.Money += MType[i];
-        }
+        PlayerStats.Money += value;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 
@@ -88,16 +62,9 @@ public class Enemy_AI : MonoBehaviour
     void EndPath()
     {
         PlayerStats.Lives--;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
-}
-
-
-/////Enemy types and different stats
-public class Enemy
-{
-    public int HP;
-    public int Value;
 }
 
 
