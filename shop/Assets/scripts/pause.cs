@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pause : MonoBehaviour
 {
-    public static bool gameIsPaused;
+    public bool gameIsPaused;
 
     void Update()
     {
