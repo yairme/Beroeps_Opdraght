@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Placement : MonoBehaviour
 {
-    public Button butt;
     public Color hovercolor;
     private Color startcolor;
     private SpriteRenderer rend;
@@ -22,7 +21,10 @@ public class Placement : MonoBehaviour
         if(turret != null)
         {
             Debug.Log("already build here TODO: display on screen");
+            return;
         }
+        GameObject TurretToBuild = buildmanager.instance.standardturret;
+        turret = (GameObject)Instantiate(TurretToBuild, transform.position, transform.rotation);
     }
 
     private void OnMouseEnter()

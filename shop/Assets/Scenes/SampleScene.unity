@@ -195,7 +195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &7999162
 SpriteRenderer:
@@ -320,7 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &8631263
 SpriteRenderer:
@@ -599,7 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &21590665
 SpriteRenderer:
@@ -724,7 +721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &61637995
 SpriteRenderer:
@@ -849,7 +845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &101394548
 SpriteRenderer:
@@ -1053,7 +1048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &114542193
 SpriteRenderer:
@@ -1178,7 +1172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &116837924
 SpriteRenderer:
@@ -1607,7 +1600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &184642696
 SpriteRenderer:
@@ -1732,7 +1724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &212329775
 SpriteRenderer:
@@ -1857,7 +1848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &213000508
 SpriteRenderer:
@@ -1982,7 +1972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &213326825
 SpriteRenderer:
@@ -2137,7 +2126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &216823439
 SpriteRenderer:
@@ -2328,7 +2316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &236352146
 SpriteRenderer:
@@ -2453,7 +2440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &252242579
 SpriteRenderer:
@@ -2578,7 +2564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &256533064
 SpriteRenderer:
@@ -2703,7 +2688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &262482269
 SpriteRenderer:
@@ -3080,7 +3064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &378444579
 SpriteRenderer:
@@ -3205,7 +3188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &387155206
 SpriteRenderer:
@@ -3330,7 +3312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &402009872
 SpriteRenderer:
@@ -3455,7 +3436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &403956108
 SpriteRenderer:
@@ -3712,7 +3692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &440665047
 SpriteRenderer:
@@ -3837,7 +3816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &471895396
 SpriteRenderer:
@@ -3962,7 +3940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &504008996
 SpriteRenderer:
@@ -4051,7 +4028,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -4170,7 +4147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &526307386
 SpriteRenderer:
@@ -4295,7 +4271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &536657164
 SpriteRenderer:
@@ -4420,7 +4395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &548390934
 SpriteRenderer:
@@ -4545,7 +4519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &551703271
 SpriteRenderer:
@@ -4670,7 +4643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &557307737
 SpriteRenderer:
@@ -4795,7 +4767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &565570865
 SpriteRenderer:
@@ -4920,7 +4891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &616821092
 SpriteRenderer:
@@ -5045,7 +5015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &617340813
 SpriteRenderer:
@@ -5170,7 +5139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &644253990
 SpriteRenderer:
@@ -5295,7 +5263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &665355295
 SpriteRenderer:
@@ -5426,7 +5393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &716964967
 SpriteRenderer:
@@ -5683,7 +5649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &754043166
 SpriteRenderer:
@@ -5923,7 +5888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &781552473
 SpriteRenderer:
@@ -6048,7 +6012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &800414536
 SpriteRenderer:
@@ -6173,7 +6136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &808977307
 SpriteRenderer:
@@ -6298,7 +6260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &822638343
 SpriteRenderer:
@@ -6423,7 +6384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &843658696
 SpriteRenderer:
@@ -6548,7 +6508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &888631110
 SpriteRenderer:
@@ -6673,7 +6632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &979948253
 SpriteRenderer:
@@ -6798,7 +6756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1009948860
 SpriteRenderer:
@@ -6923,7 +6880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1030072028
 SpriteRenderer:
@@ -7262,6 +7218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7333d9bc3e1941c47bbe4a887a3fa478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardturret: {fileID: 4129885581288604371, guid: 8b5d0aa4d210ea8458992a6a22014894,
+    type: 3}
 --- !u!114 &1078680243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7478,7 +7436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1129121603
 SpriteRenderer:
@@ -7603,7 +7560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1156237605
 SpriteRenderer:
@@ -7860,7 +7816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1208791857
 SpriteRenderer:
@@ -8133,7 +8088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1221773296
 SpriteRenderer:
@@ -8258,7 +8212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1229133180
 SpriteRenderer:
@@ -8383,7 +8336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1255708953
 SpriteRenderer:
@@ -8508,7 +8460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1265078320
 SpriteRenderer:
@@ -8633,7 +8584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1271465877
 SpriteRenderer:
@@ -8890,7 +8840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1362247944
 SpriteRenderer:
@@ -9015,7 +8964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1364368661
 SpriteRenderer:
@@ -9140,7 +9088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1379591304
 SpriteRenderer:
@@ -9265,7 +9212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1395798839
 SpriteRenderer:
@@ -9390,7 +9336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1413938572
 SpriteRenderer:
@@ -9647,7 +9592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1430942129
 SpriteRenderer:
@@ -9772,7 +9716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1432364527
 SpriteRenderer:
@@ -10055,7 +9998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!61 &1486153924
 BoxCollider2D:
@@ -10154,7 +10096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1491227486
 SpriteRenderer:
@@ -10279,7 +10220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1496941702
 SpriteRenderer:
@@ -10404,7 +10344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1510274036
 SpriteRenderer:
@@ -10529,7 +10468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1528939392
 SpriteRenderer:
@@ -10654,7 +10592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1575458424
 SpriteRenderer:
@@ -10810,7 +10747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1602525811
 SpriteRenderer:
@@ -10935,7 +10871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1610081537
 SpriteRenderer:
@@ -11060,7 +10995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1610244079
 SpriteRenderer:
@@ -11185,7 +11119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1629663340
 SpriteRenderer:
@@ -11310,7 +11243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1633160480
 SpriteRenderer:
@@ -11435,7 +11367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1641247769
 SpriteRenderer:
@@ -11560,7 +11491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1655510832
 SpriteRenderer:
@@ -11685,7 +11615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1667190072
 SpriteRenderer:
@@ -11810,7 +11739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1673664807
 SpriteRenderer:
@@ -12278,7 +12206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1707375914
 SpriteRenderer:
@@ -12403,7 +12330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1733536597
 SpriteRenderer:
@@ -12680,7 +12606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1768792189
 SpriteRenderer:
@@ -12880,7 +12805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1832566327
 SpriteRenderer:
@@ -13084,7 +13008,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1876513390
 SpriteRenderer:
@@ -13209,7 +13132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1886860966
 SpriteRenderer:
@@ -13334,7 +13256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1900007562
 SpriteRenderer:
@@ -13459,7 +13380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1905525846
 SpriteRenderer:
@@ -13584,7 +13504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1959649437
 SpriteRenderer:
@@ -13709,7 +13628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1962101568
 SpriteRenderer:
@@ -13834,7 +13752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1965376806
 SpriteRenderer:
@@ -13959,7 +13876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1973780878
 SpriteRenderer:
@@ -14084,7 +14000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1988287010
 SpriteRenderer:
@@ -14209,7 +14124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &1996260322
 SpriteRenderer:
@@ -14334,7 +14248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2002620406
 SpriteRenderer:
@@ -14459,7 +14372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2003403371
 SpriteRenderer:
@@ -14584,7 +14496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2026984023
 SpriteRenderer:
@@ -14709,7 +14620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2033871453
 SpriteRenderer:
@@ -14834,7 +14744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2060184041
 SpriteRenderer:
@@ -15091,7 +15000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2078238625
 SpriteRenderer:
@@ -15216,7 +15124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2090062156
 SpriteRenderer:
@@ -15341,7 +15248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2095787065
 SpriteRenderer:
@@ -15612,7 +15518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2122704292
 SpriteRenderer:
@@ -15737,7 +15642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2132459340
 SpriteRenderer:
@@ -15862,7 +15766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9c57e760e9b7147b914e45f37236d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butt: {fileID: 0}
   hovercolor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
 --- !u!212 &2146765105
 SpriteRenderer:
