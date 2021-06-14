@@ -1214,3 +1214,59 @@ System memory in use after: 89.0 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2393.
 Total: 2.020300 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.104300 ms MarkObjects: 1.659700 ms  DeleteObjects: 0.014400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001945 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2396.
+Total: 2.116400 ms (FindLiveObjects: 0.327500 ms CreateObjectMapping: 0.157300 ms MarkObjects: 1.614700 ms  DeleteObjects: 0.015900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 564.622488 seconds.
+  path: Assets/Prefabs/WayPoint.prefab
+  artifactKey: Guid(6b1f7a71bfa98c34781f793e0feafc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WayPoint.prefab using Guid(6b1f7a71bfa98c34781f793e0feafc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fee4528d0172660308a5c514ed35998') in 0.022042 seconds
+  Import took 0.025764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(0f81676fda2360f498fb3022de039e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(0f81676fda2360f498fb3022de039e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e88ec383bd36ce095821e235f3ccabf') in 0.043614 seconds
+  Import took 0.047078 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.824 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.9 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2402.
+Total: 3.080700 ms (FindLiveObjects: 0.316000 ms CreateObjectMapping: 0.101800 ms MarkObjects: 2.641700 ms  DeleteObjects: 0.019400 ms)
+
