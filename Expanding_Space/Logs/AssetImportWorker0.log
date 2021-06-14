@@ -1342,3 +1342,98 @@ Received Import Request.
 Start importing Assets/Prefabs/Enemys/Tough/Enemy_Tank.prefab using Guid(0835e8f1c8388ef468d6310bca33d5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac61f89d51d89df81ecdf3f342efeac8') in 0.019132 seconds
   Import took 0.023913 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001564 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+Shader 'TextMeshPro/Distance Field Overlay': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field SSD': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1829 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.3 MB.
+System memory in use after: 90.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2418.
+Total: 2.413100 ms (FindLiveObjects: 0.315500 ms CreateObjectMapping: 0.111300 ms MarkObjects: 1.699900 ms  DeleteObjects: 0.285500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.127668 seconds.
+  path: Assets/shop/Audio/gay.mp3
+  artifactKey: Guid(e7969fdba55a0c048bd2ca7152088266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/Audio/gay.mp3 using Guid(e7969fdba55a0c048bd2ca7152088266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a083ed98165c89bde7f21df0176d9bf') in 0.103302 seconds
+  Import took 0.106659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.336833 seconds.
+  path: Assets/shop/images/background_space.png
+  artifactKey: Guid(6386e0c15ad4abf46992ebf386d42519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/images/background_space.png using Guid(6386e0c15ad4abf46992ebf386d42519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b648117e9081d3135a5a14d288c21c77') in 0.032998 seconds
+  Import took 0.036436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/shop/images/obama.png
+  artifactKey: Guid(563d6d3965a62594086b740ab38205f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/images/obama.png using Guid(563d6d3965a62594086b740ab38205f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6403f020dd87fd609b97bc99c3c0a9') in 0.031407 seconds
+  Import took 0.034709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/shop/images/background_space2.png
+  artifactKey: Guid(ea2dee256583c044d9dba45ec1770c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/images/background_space2.png using Guid(ea2dee256583c044d9dba45ec1770c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a25830a517e4589f31bf6f1e7d53f60') in 0.015565 seconds
+  Import took 0.019207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/shop/images/space_mars.png
+  artifactKey: Guid(28ef23d8bd646874ca5dd61cdca3fe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/images/space_mars.png using Guid(28ef23d8bd646874ca5dd61cdca3fe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084e053bf1a3c5ae9345c148c8b7e5f8') in 0.027807 seconds
+  Import took 0.031268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.121368 seconds.
+  path: Assets/shop/prefabs/Button.prefab
+  artifactKey: Guid(1e45547c72857484caaf255d6b487b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/prefabs/Button.prefab using Guid(1e45547c72857484caaf255d6b487b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5af2533c5e85e67c50811bc61892a3d') in 0.020343 seconds
+  Import took 0.023940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/shop/prefabs/Turret 1.prefab
+  artifactKey: Guid(8b5d0aa4d210ea8458992a6a22014894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/prefabs/Turret 1.prefab using Guid(8b5d0aa4d210ea8458992a6a22014894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290284d4ba786519ca7589994a4d9662') in 0.019924 seconds
+  Import took 0.023082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/shop/prefabs/cube.prefab
+  artifactKey: Guid(3053778a25b7ee74cbc6d4fcf87ee093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/prefabs/cube.prefab using Guid(3053778a25b7ee74cbc6d4fcf87ee093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642594bbbeea7292d7635fa7ef194840') in 0.030049 seconds
+  Import took 0.033871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/shop/prefabs/turret.prefab
+  artifactKey: Guid(6b44771fe45940343844c71e7ecfe8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/shop/prefabs/turret.prefab using Guid(6b44771fe45940343844c71e7ecfe8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfff99141f5b380956b0a130ba1b35c5') in 0.008780 seconds
+  Import took 0.012160 seconds .
+
