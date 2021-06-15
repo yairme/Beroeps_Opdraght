@@ -8,14 +8,14 @@ public class turret : MonoBehaviour
     private Transform target;
     public float range = 15f;
 
-    public string enemyTag = "Enemy";
+    public string enemyTag;
 
     public Transform PartToRotate;
     public float turnspeed = 10f;
 
     // Start is called before the first frame update
     public void Start()
-    { 
+    {
       InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
     // Update is called once per frame
