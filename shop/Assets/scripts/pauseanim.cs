@@ -22,7 +22,7 @@ public class pauseanim : MonoBehaviour
         if (paused.gameIsPaused)
         {
             pausetext.gameObject.SetActive(true);
-            pausing.Play("pausing");
+            //pausing.Play("pausing");
         }
     }
     
