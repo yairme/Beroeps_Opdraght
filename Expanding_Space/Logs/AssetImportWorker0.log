@@ -1,6 +1,7 @@
 Using pre-set license
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Built from '2020.2/staging' branch; Version is '2020.2.5f1 (e2c53f129de5) revision 14861631'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'nl' Physical Memory: 16173 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
@@ -10,6 +11,8 @@ C:\Users\SKIKK\personal shit\unity projects\2020.2.5f1\Editor\Unity.exe
 =======
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 16204 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
@@ -17,6 +20,9 @@ BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, I
  COMMAND LINE ARGUMENTS:
 C:\Users\Gebruiker\OneDrive\Desktop\Shool work\Year_1\Periode_3\Unity\2020.3.6f1\Editor\Unity.exe
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
@@ -26,6 +32,7 @@ C:\Users\Gebruiker\OneDrive\Desktop\Shool work\Year_1\Periode_3\Unity\2020.3.6f1
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 C:/Users/SKIKK/mediacollege amsterdam/bewijzenmap/periode 1.4/space/Beroeps_Opdraght_Space/Expanding_Space
@@ -171,6 +178,8 @@ Received Import Request.
 Start importing Assets/shop/scripts/pause.cs using Guid(914c889ad18f3cd499b80948217ed54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5051ef519a884406ab20b9fac539a7b7') in 0.001873 seconds
   Import took 0.004680 seconds .
 =======
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 C:/Users/Gebruiker/OneDrive/Desktop/Shool work/Year_1/Periode_4/BeroepsOpdracht/Expanding_Space
@@ -364,6 +373,9 @@ Received Import Request.
 Start importing Assets/Scripts/turret.cs using Guid(6251d9d0a4363984c8f1bd0661dcf82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedc0ae66e4971081755924f0a8c0039') in 0.002974 seconds
   Import took 0.009196 seconds .
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
@@ -371,6 +383,7 @@ Start importing Assets/Scripts/turret.cs using Guid(6251d9d0a4363984c8f1bd0661dc
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.000803 seconds.
@@ -395,6 +408,8 @@ Total: 1.530600 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.059400 m
 =======
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 Registered in 0.001090 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -412,6 +427,9 @@ System memory in use after: 89.6 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2299.
 Total: 1.904500 ms (FindLiveObjects: 0.194100 ms CreateObjectMapping: 0.106300 ms MarkObjects: 1.566700 ms  DeleteObjects: 0.036600 ms)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
@@ -421,7 +439,11 @@ Received Prepare
 Registering precompiled user dll's ...
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.000745 seconds.
+=======
+Registered in 0.001148 seconds.
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 Registered in 0.001148 seconds.
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
@@ -432,6 +454,7 @@ Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Invoked RoslynAnalysisRunner static constructor.
@@ -459,6 +482,8 @@ Start importing Assets/Prefabs/Grid.prefab using Guid(d8e027005dd23044480a65056e
 =======
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 Mono: successfully reloaded assembly
 - Completed reload, in  0.786 seconds
 Platform modules already initialized, skipping
@@ -479,6 +504,9 @@ Received Import Request.
 Start importing Assets/Scripts/turret.cs using Guid(6251d9d0a4363984c8f1bd0661dcf82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ef93bda471103487e97c4da45f9d1d') in 0.005032 seconds
   Import took 0.009599 seconds .
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
@@ -486,6 +514,7 @@ Start importing Assets/Scripts/turret.cs using Guid(6251d9d0a4363984c8f1bd0661dc
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.001013 seconds.
@@ -559,6 +588,8 @@ Start importing Assets/shop/scripts/obama using Guid(e773075f47e457a43bbdb5c8c56
 =======
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
 Registered in 0.001782 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -578,6 +609,9 @@ Total: 1.703500 ms (FindLiveObjects: 0.182100 ms CreateObjectMapping: 0.069200 m
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
+=======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
 =======
 >>>>>>> parent of a7e7c7e (Update to wave spawner)
