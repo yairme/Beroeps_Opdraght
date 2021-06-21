@@ -39,9 +39,9 @@ public class WaveSpawner : MonoBehaviour
 
         Wave wave = waves[waveNumber];
 
-        for (int i = 0; i < wave.count / wave.enemy.Length; i++)
+        for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy(wave.enemy[i]);
+            SpawnEnemy(wave.enemy);
             yield return new WaitForSeconds(1f / wave.rate);
         }
         waveNumber++;

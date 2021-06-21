@@ -1380,12 +1380,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 4286998662315351748, guid: d8e027005dd23044480a65056e4fac06, type: 3}
 =======
     - target: {fileID: 4897783452559929548, guid: a1452b715193b1841a9c4531398a1bc9, type: 3}
       propertyPath: enemyTag.Array.size
       value: 1
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of a7e7c7e (Update to wave spawner)
     - target: {fileID: 5342668206583854503, guid: a1452b715193b1841a9c4531398a1bc9, type: 3}
 >>>>>>> 0cc8a51e715cb542fffbb8dff6948a0dff89811c
       propertyPath: m_Name
@@ -1436,14 +1439,6 @@ PrefabInstance:
       propertyPath: waves.Array.data[1].enemy
       value: 
       objectReference: {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
-    - target: {fileID: 306580434139221192, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
-      propertyPath: waves.Array.data[0].enemy.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 306580434139221192, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
-      propertyPath: waves.Array.data[1].enemy.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 306580434139221193, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
       propertyPath: m_Name
       value: GameMaster
