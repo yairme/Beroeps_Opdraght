@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 306580434139221195}
   - component: {fileID: 306580434139221192}
+  - component: {fileID: 5592418590609639112}
+  - component: {fileID: 386450070706877618}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -46,3 +48,33 @@ MonoBehaviour:
   waves: []
   spawnPoint: {fileID: 0}
   timeBetweenWaves: 5
+--- !u!114 &5592418590609639112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306580434139221193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7333d9bc3e1941c47bbe4a887a3fa478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardturret: {fileID: 5342668206583854503, guid: a1452b715193b1841a9c4531398a1bc9, type: 3}
+--- !u!114 &386450070706877618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306580434139221193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914c889ad18f3cd499b80948217ed54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameIsPaused: 0
+  PausedMenu: 0
+  pausetext: {fileID: 0}
+  pausemenu: {fileID: 0}
+  Settings: {fileID: 0}
