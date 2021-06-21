@@ -8,7 +8,7 @@ public class turret : MonoBehaviour
     private Transform target;
     public float range = 15f;
 
-    public string enemyTag;
+    public string[] enemyTag;
 
     public Transform PartToRotate;
     public float turnspeed = 10f;
@@ -21,7 +21,7 @@ public class turret : MonoBehaviour
     // Update is called once per frame
     public void UpdateTarget ()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag[0]) ;
 
         float ShortestDistance = Mathf.Infinity;
 
