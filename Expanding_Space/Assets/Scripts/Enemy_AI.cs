@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
 using UnityEngine.UI;
 
 public class Enemy_AI : MonoBehaviour
@@ -20,22 +19,12 @@ public class Enemy_AI : MonoBehaviour
 
     [Header("Unity stuff")]
     public Image healthBar;
-=======
-
-public class Enemy_AI : MonoBehaviour
-{
-    //Base class/AI for the enemies.
-    protected float HP = 100f;
-    protected float speed = 5f;
-    protected float value = 1f;
->>>>>>> master
 
     protected Transform target;
     protected int wavepointIndex = 0;
 
     private void Start()
     {
-<<<<<<< HEAD
         speed = startSpeed;
         target = WayPoints.wpoints[0];
     }
@@ -57,19 +46,14 @@ public class Enemy_AI : MonoBehaviour
         PlayerStats.Money += value;
         WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
-    }
-
-=======
         target = WayPoints.wpoints[0];
     }
 
->>>>>>> master
     private void Update()
     {
         Vector2 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-<<<<<<< HEAD
         if (Vector2.Distance(transform.position, target.position) <= 0.4f)
         {
             GetNextWaypoint();
@@ -80,24 +64,13 @@ public class Enemy_AI : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-
-=======
-        if (Vector2.Distance(transform.position, target.position) <= 0.2f)
-        {
-            GetNextWaypoint();
-        }
-    }
-
->>>>>>> master
     void GetNextWaypoint()
     {
         if (wavepointIndex >= WayPoints.wpoints.Length - 1)
         {
-<<<<<<< HEAD
             EndPath();
             return;
         }
-
         wavepointIndex++;
         target = WayPoints.wpoints[wavepointIndex];
     }
@@ -110,12 +83,3 @@ public class Enemy_AI : MonoBehaviour
     }
 }
 
-
-=======
-            Destroy(gameObject);
-        }
-        wavepointIndex++;
-        target = WayPoints.wpoints[wavepointIndex];
-    }
-}
->>>>>>> master

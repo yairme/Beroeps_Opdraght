@@ -6,11 +6,11 @@ public class GameManager : MonoBehaviour
 {
     private bool gameEnded = false;
 
-    void Update()
+    public void Update()
     {
         if (gameEnded)
             return;
-
+        
         if (PlayerStats.Lives <= 0)
         {
             EndGame();
