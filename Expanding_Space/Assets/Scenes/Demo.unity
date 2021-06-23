@@ -336,84 +336,64 @@ MonoBehaviour:
   waves:
   - count: 5
     rate: 6
-    enemy:
-    - {fileID: -7051462773629756710, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+    enemy: []
   - count: 10
     rate: 1
-    enemy:
-    - {fileID: -7051462773629756710, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+    enemy: []
   - count: 15
     rate: 1
-    enemy:
-    - {fileID: -7051462773629756710, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+    enemy: []
   - count: 5
     rate: 2
-    enemy:
-    - {fileID: 7475081264882670865, guid: 0835e8f1c8388ef468d6310bca33d5c0, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   - count: 2
     rate: 4
-    enemy:
-    - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+    enemy: []
   spawnPoint: {fileID: 459485185}
   timeBetweenWaves: 5
 --- !u!114 &381455695
@@ -428,8 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795e364693125ce46a160878d5eac786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Money: 400
-  Lives: 20
+  Money: 0
+  Lives: 0
 --- !u!114 &381455696
 MonoBehaviour:
   m_ObjectHideFlags: 0
