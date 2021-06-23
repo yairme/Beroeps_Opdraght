@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public int EnemiesAlive = 0;
+
+    public static int EnemiesAlive = 0;
 
     public Wave[] waves;
 

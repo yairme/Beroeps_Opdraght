@@ -9,10 +9,6 @@ public class Enemy_AI : MonoBehaviour
 
     public float startSpeed = 10f;
 
-    private PlayerStats ST;
-    private WayPoints WP;
-    private WaveSpawner WS;
-
     [HideInInspector]
     public float speed;
 
@@ -40,14 +36,17 @@ public class Enemy_AI : MonoBehaviour
     private void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         WS = GameObject.Find("GameMaster").GetComponent<WaveSpawner>();
         WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
         ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
 =======
 <<<<<<< HEAD
 >>>>>>> parent of 3cf3400 (Wave spawner 2.0)
+=======
+>>>>>>> parent of 1a2cfd0 (Live bug fixed.)
         speed = startSpeed;
-        target = WP.wpoints[0];
+        target = WayPoints.wpoints[0];
     }
 
     public void TakeDamage (int amount)
@@ -64,9 +63,10 @@ public class Enemy_AI : MonoBehaviour
 
     void Die()
     {
-        ST.Money += value;
-        WS.EnemiesAlive--;
+        PlayerStats.Money += value;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
+<<<<<<< HEAD
 <<<<<<< HEAD
         target = WP.wpoints[0];
 =======
@@ -75,6 +75,9 @@ public class Enemy_AI : MonoBehaviour
 =======
         target = WayPoints.wpoints[0];
 >>>>>>> parent of 3cf3400 (Wave spawner 2.0)
+=======
+        target = WayPoints.wpoints[0];
+>>>>>>> parent of 1a2cfd0 (Live bug fixed.)
     }
 
 >>>>>>> master
@@ -84,16 +87,20 @@ public class Enemy_AI : MonoBehaviour
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (Vector2.Distance(transform.position, target.position) <= 0.2f)
 =======
 <<<<<<< HEAD
         if (Vector2.Distance(transform.position, target.position) <= 0.4f)
 >>>>>>> parent of 3cf3400 (Wave spawner 2.0)
+=======
+        if (Vector2.Distance(transform.position, target.position) <= 0.4f)
+>>>>>>> parent of 1a2cfd0 (Live bug fixed.)
         {
             GetNextWaypoint();
         }
 
-        Vector3 dirL = WP.wpoints[wavepointIndex].position - transform.position;
+        Vector3 dirL = WayPoints.wpoints[wavepointIndex].position - transform.position;
         float angle = Mathf.Atan2(dirL.y, dirL.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
@@ -109,7 +116,7 @@ public class Enemy_AI : MonoBehaviour
 >>>>>>> master
     void GetNextWaypoint()
     {
-        if (wavepointIndex >= WP.wpoints.Length - 1)
+        if (wavepointIndex >= WayPoints.wpoints.Length - 1)
         {
 <<<<<<< HEAD
             EndPath();
@@ -117,13 +124,13 @@ public class Enemy_AI : MonoBehaviour
         }
 
         wavepointIndex++;
-        target = WP.wpoints[wavepointIndex];
+        target = WayPoints.wpoints[wavepointIndex];
     }
 
     void EndPath()
     {
-        ST.Lives--;
-        WS.EnemiesAlive--;
+        PlayerStats.Lives--;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 }
