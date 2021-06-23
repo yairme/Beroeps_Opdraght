@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Expanding_Space/Assets/Prefabs/GameMaster 1.prefab.meta
 guid: c1c8070229c523b43af47c75f398aa4e
+=======
+guid: 98a50a67727767347946e3fb4ecc9941
+>>>>>>> parent of 3cf3400 (Wave spawner 2.0):Expanding_Space/Assets/Enemys/Fast/Enemy_Speeder.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
