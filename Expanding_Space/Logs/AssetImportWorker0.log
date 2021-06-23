@@ -1030,3 +1030,47 @@ System memory in use after: 90.2 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2413.
 Total: 1.975400 ms (FindLiveObjects: 0.224800 ms CreateObjectMapping: 0.081500 ms MarkObjects: 1.653400 ms  DeleteObjects: 0.014700 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001688 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.881 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2402.
+Total: 2.153000 ms (FindLiveObjects: 0.356100 ms CreateObjectMapping: 0.167700 ms MarkObjects: 1.606800 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.659239 seconds.
+  path: Assets/Prefabs/WayPoint.prefab
+  artifactKey: Guid(6b1f7a71bfa98c34781f793e0feafc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WayPoint.prefab using Guid(6b1f7a71bfa98c34781f793e0feafc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fee4528d0172660308a5c514ed35998') in 0.022911 seconds
+  Import took 0.026139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(0f81676fda2360f498fb3022de039e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(0f81676fda2360f498fb3022de039e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e88ec383bd36ce095821e235f3ccabf') in 0.043015 seconds
+  Import took 0.046068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Prefabs/GameMaster.prefab
+  artifactKey: Guid(b0ab2e02adad918419c446a861633cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameMaster.prefab using Guid(b0ab2e02adad918419c446a861633cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac25c33060d25a75f0ba0a79f506265') in 0.005149 seconds
+  Import took 0.008434 seconds .
+
