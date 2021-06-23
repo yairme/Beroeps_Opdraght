@@ -40,14 +40,11 @@ public class Enemy_AI : MonoBehaviour
     private void Start()
     {
 <<<<<<< HEAD
-<<<<<<< HEAD
         WS = GameObject.Find("GameMaster").GetComponent<WaveSpawner>();
         WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
         ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
 =======
 <<<<<<< HEAD
->>>>>>> parent of 3cf3400 (Wave spawner 2.0)
-=======
 >>>>>>> parent of 3cf3400 (Wave spawner 2.0)
         speed = startSpeed;
         target = WP.wpoints[0];
@@ -71,11 +68,8 @@ public class Enemy_AI : MonoBehaviour
         WS.EnemiesAlive--;
         Destroy(gameObject);
 <<<<<<< HEAD
-<<<<<<< HEAD
         target = WP.wpoints[0];
 =======
-=======
->>>>>>> parent of 3cf3400 (Wave spawner 2.0)
     }
 
 =======
@@ -90,12 +84,9 @@ public class Enemy_AI : MonoBehaviour
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
 <<<<<<< HEAD
-<<<<<<< HEAD
         if (Vector2.Distance(transform.position, target.position) <= 0.2f)
 =======
 <<<<<<< HEAD
-=======
->>>>>>> parent of 3cf3400 (Wave spawner 2.0)
         if (Vector2.Distance(transform.position, target.position) <= 0.4f)
 >>>>>>> parent of 3cf3400 (Wave spawner 2.0)
         {
