@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class shop : MonoBehaviour
 {
+    private PlayerStats ST;
     private bool standard;
     private bool laser;
     private bool missle;
@@ -16,6 +17,7 @@ public class shop : MonoBehaviour
 
     private void Start()
     {
+        ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
         Buildmanager = buildmanager.instance;
     }
     private void Update()
@@ -27,14 +29,26 @@ public class shop : MonoBehaviour
     }
     public void placestandard()
     {
-        Buildmanager.SetTurretToBuild(Buildmanager.standardturret);
+        if (ST.Money >= 149)
+        {
+            Buildmanager.SetTurretToBuild(Buildmanager.standardturret);
+            ST.Money -= 150;
+        }
     }
     public void placelaser()
     {
-        Buildmanager.SetTurretToBuild(Buildmanager.laserturret);
+        if (ST.Money >= 199)
+        {
+            Buildmanager.SetTurretToBuild(Buildmanager.laserturret);
+            ST.Money -= 200;
+        }
     }
     public void placemissle()
     {
-        Buildmanager.SetTurretToBuild(Buildmanager.Missleturret);
+        if (ST.Money >= 299)
+        {
+            Buildmanager.SetTurretToBuild(Buildmanager.Missleturret);
+            ST.Money -= 300;
+        }
     }
 }

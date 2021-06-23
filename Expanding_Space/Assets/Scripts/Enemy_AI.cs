@@ -18,7 +18,7 @@ public class Enemy_AI : MonoBehaviour
     public int startHealth = 100;
     private float health;
 
-    public int value = 25;
+    public int value;
 
 
     [Header("Unity stuff")]
@@ -30,7 +30,7 @@ public class Enemy_AI : MonoBehaviour
     private void Start()
     {
         WS = GameObject.Find("GameMaster").GetComponent<WaveSpawner>();
-        WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
+        WP = GameObject.Find("waypoint").GetComponent<WayPoints>();
         ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
 
         speed = startSpeed;
@@ -52,7 +52,7 @@ public class Enemy_AI : MonoBehaviour
     void Die()
     {
         ST.Money += value;
-        WaveSpawner.EnemiesAlive--;
+        WS.EnemiesAlive--;
         Destroy(gameObject);
 
     }
@@ -85,7 +85,7 @@ public class Enemy_AI : MonoBehaviour
     void EndPath()
     {
         ST.Lives--;
-        WaveSpawner.EnemiesAlive--;
+        WS.EnemiesAlive--;
         Destroy(gameObject);
     }
 }

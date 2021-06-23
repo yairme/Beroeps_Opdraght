@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
 
-    public static int EnemiesAlive = 0;
+    public int EnemiesAlive = 0;
 
     public Wave[] waves;
 
@@ -39,26 +39,25 @@ public class WaveSpawner : MonoBehaviour
 
         for (int i = 0; i < wave.count; i++)
         {
-            StartCoroutine(Looping());
-            yield return new WaitForSeconds(1f / wave.rate);
+            Looping();
+            yield return new WaitForSeconds(10f / wave.rate);
         }
         waveNumber++;
 
         if (waveNumber == waves.Length)
         {
-            Debug.Log("LEVEL WON!");
+            //LevelWin UI
             this.enabled = false;
         }
     }
 
-    IEnumerable Looping()
+    void Looping()
     {
         Wave wave = waves[waveNumber];
 
         for (int j = 0; j < wave.enemy.Length; j++)
         {
             SpawnEnemy(wave.enemy[j]);
-            yield return new WaitForSeconds(1f / wave.rate);
         }
     }
 
