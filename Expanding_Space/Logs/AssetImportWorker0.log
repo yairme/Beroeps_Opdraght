@@ -138,6 +138,7 @@ Received Import Request.
 Start importing Assets/Scripts/Enemy_AI.cs using Guid(011d918d9a4f5b040bac3107869f3e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f0998dd31cf0d5d601722ea27afa58') in 0.006442 seconds
   Import took 0.012357 seconds .
 
+<<<<<<< Updated upstream
 ========================================================================
 Received Import Request.
   Time since last request: 337.555188 seconds.
@@ -155,3 +156,5 @@ Start importing Assets/Scripts/Enemy_AI.cs using Guid(011d918d9a4f5b040bac310786
   Import took 0.017043 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> Stashed changes
