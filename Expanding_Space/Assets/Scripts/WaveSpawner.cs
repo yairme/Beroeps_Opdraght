@@ -34,11 +34,13 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        PlayerStats.Rounds++;
+
         Wave wave = waves[waveNumber];
 
         for (int i = 0; i < wave.count; i++)
         {
-            StartCoroutine(loop());
+            SpawnEnemy(wave.enemy);
             yield return new WaitForSeconds(1f / wave.rate);
         }
         waveNumber++;
@@ -47,17 +49,6 @@ public class WaveSpawner : MonoBehaviour
         {
             Debug.Log("LEVEL WON!");
             this.enabled = false;
-        }
-    }
-
-    IEnumerator loop()
-    {
-        Wave wave = waves[waveNumber];
-
-        for (int j = 0; j < wave.enemy.Length; j += 1 )
-        {
-            SpawnEnemy(wave.enemy[j]);
-            yield return new WaitForSeconds(1f / wave.rate);
         }
     }
 

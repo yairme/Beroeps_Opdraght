@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.UI;
 
 public class Enemy_AI : MonoBehaviour
@@ -23,15 +24,28 @@ public class Enemy_AI : MonoBehaviour
 
     [Header("Unity stuff")]
     public Image healthBar;
+=======
+
+public class Enemy_AI : MonoBehaviour
+{
+    //Base class/AI for the enemies.
+    protected float HP = 100f;
+    protected float speed = 5f;
+    protected float value = 1f;
+>>>>>>> master
 
     protected Transform target;
     protected int wavepointIndex = 0;
 
     private void Start()
     {
+<<<<<<< HEAD
         WS = GameObject.Find("GameMaster").GetComponent<WaveSpawner>();
         WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
         ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 3cf3400 (Wave spawner 2.0)
         speed = startSpeed;
         target = WP.wpoints[0];
     }
@@ -53,15 +67,28 @@ public class Enemy_AI : MonoBehaviour
         ST.Money += value;
         WS.EnemiesAlive--;
         Destroy(gameObject);
+<<<<<<< HEAD
         target = WP.wpoints[0];
+=======
     }
 
+=======
+        target = WayPoints.wpoints[0];
+>>>>>>> parent of 3cf3400 (Wave spawner 2.0)
+    }
+
+>>>>>>> master
     private void Update()
     {
         Vector2 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
+<<<<<<< HEAD
         if (Vector2.Distance(transform.position, target.position) <= 0.2f)
+=======
+<<<<<<< HEAD
+        if (Vector2.Distance(transform.position, target.position) <= 0.4f)
+>>>>>>> parent of 3cf3400 (Wave spawner 2.0)
         {
             GetNextWaypoint();
         }
@@ -71,13 +98,24 @@ public class Enemy_AI : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
+
+=======
+        if (Vector2.Distance(transform.position, target.position) <= 0.2f)
+        {
+            GetNextWaypoint();
+        }
+    }
+
+>>>>>>> master
     void GetNextWaypoint()
     {
         if (wavepointIndex >= WP.wpoints.Length - 1)
         {
+<<<<<<< HEAD
             EndPath();
             return;
         }
+
         wavepointIndex++;
         target = WP.wpoints[wavepointIndex];
     }
@@ -90,3 +128,12 @@ public class Enemy_AI : MonoBehaviour
     }
 }
 
+
+=======
+            Destroy(gameObject);
+        }
+        wavepointIndex++;
+        target = WayPoints.wpoints[wavepointIndex];
+    }
+}
+>>>>>>> master
