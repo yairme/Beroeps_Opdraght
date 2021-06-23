@@ -27,6 +27,11 @@ public class QuitToMenu : MonoBehaviour
         Settings.SetActive(false);
         SettingsActive = false;
     }
+    public void Resume()
+    {
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
 
     /*
     public bool GetSettings()

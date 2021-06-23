@@ -6,28 +6,32 @@ public class pause : MonoBehaviour
 {
     public bool gameIsPaused;
     public bool PausedMenu;
+
     public GameObject pausetext;
     public GameObject pausemenu;
+    //zorgt ervoor dat niet beide pause manier tergelijke tijd gebruikt kunnen worden
     private bool alreadypausedA = false;
     private bool alreadypausedB = false;
+
     public GameObject Settings;
     private QuitToMenu Quit;
 
     private void Start()
     {
-        //Quit = Settings.GetComponent<QuitToMenu>();
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)&&!alreadypausedB)
         {
             gameIsPaused = !gameIsPaused;
             PauseGame();
+            alreadypausedA = !alreadypausedA;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)&&!alreadypausedA)
         {
             PausedMenu = !PausedMenu;
             PausingMenu();
+            alreadypausedB = !alreadypausedB;
         }
     }
 

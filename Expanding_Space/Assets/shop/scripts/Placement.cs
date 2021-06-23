@@ -8,23 +8,34 @@ public class Placement : MonoBehaviour
     private Color startcolor;
     private SpriteRenderer rend;
     private GameObject turret;
+    public bool activeshop;
+    public GameObject dashop;
+    private shop build;
 
+    buildmanager Buildmanager;
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
         startcolor = rend.material.color;
+        build = dashop.GetComponent<shop>();
+        Buildmanager = buildmanager.instance;
     }
 
 
     private void OnMouseDown()
     {
+        if(Buildmanager.getturrettobuild() == null)
+        {
+            return;
+        }
         if(turret != null)
         {
             Debug.Log("already build here TODO: display on screen");
             return;
         }
-        GameObject TurretToBuild = buildmanager.instance.standardturret;
+        GameObject TurretToBuild = Buildmanager.getturrettobuild();
         turret = (GameObject)Instantiate(TurretToBuild, transform.position, transform.rotation);
+
     }
 
     private void OnMouseEnter()

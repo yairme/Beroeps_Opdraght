@@ -7,7 +7,6 @@ public class Button : MonoBehaviour
     [HideInInspector] public Inventory inv;
     public GameObject shopmanager;
     public GameObject turret;
-    public GameObject spawn;
     [HideInInspector] public bool hasbought;
     [HideInInspector]public bool follow;
     public void Start()

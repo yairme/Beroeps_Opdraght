@@ -1,30 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class ExitShop : MonoBehaviour
 {
     public Canvas shopUI;
-    Animator exit;
-    public GameObject shop;
-
-
+    public GameObject build;
+    private buildmanager bu;
     private void Start()
     {
-        exit = shop.GetComponent<Animator>();
-    }
-    public void Exit()
-    {
-        StartCoroutine(waitforsec());
+        bu = build.GetComponent<buildmanager>();
     }
 
-    private IEnumerator waitforsec()
+
+    public void Exit()
     {
-        exit.Play("shop_exit");
-        //()=> exit.isPlaying == false
-        yield return new WaitForSeconds(0.167f);
         shopUI.gameObject.SetActive(false);
+        bu.i = false;
     }
 }
