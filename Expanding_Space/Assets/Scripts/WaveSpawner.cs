@@ -5,6 +5,8 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
 
+    private GameManager GM;
+
     public int EnemiesAlive = 0;
 
     public Wave[] waves;
@@ -16,6 +18,11 @@ public class WaveSpawner : MonoBehaviour
     
     private int waveNumber = 0;
 
+    void Start()
+    {
+        GM = GameObject.Find("GameMaster").GetComponent<GameManager>();
+    }
+
     private void Update()
     {
         if (EnemiesAlive > 0)
@@ -25,6 +32,8 @@ public class WaveSpawner : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            if (GM.gameEnded)
+                return;
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
             return;
@@ -36,11 +45,11 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         Wave wave = waves[waveNumber];
-
+            
         for (int i = 0; i < wave.count; i++)
         {
             Looping();
-            yield return new WaitForSeconds(10f / wave.rate);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
         waveNumber++;
 

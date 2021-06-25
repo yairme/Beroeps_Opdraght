@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Placement : MonoBehaviour
 {
+    private buildmanager BM;
+
     public Color hovercolor;
     private Color startcolor;
     private SpriteRenderer rend;
@@ -15,15 +17,18 @@ public class Placement : MonoBehaviour
     buildmanager Buildmanager;
     private void Start()
     {
+        BM = GameObject.Find("GameMaster").GetComponent<buildmanager>();
         rend = GetComponent<SpriteRenderer>();
         startcolor = rend.material.color;
         build = dashop.GetComponent<shop>();
-        Buildmanager = buildmanager.instance;
+        Buildmanager = BM.instance;
     }
 
 
     private void OnMouseDown()
     {
+        if (BM.Bal == false)
+            return;
         if(Buildmanager.getturrettobuild() == null)
         {
             return;

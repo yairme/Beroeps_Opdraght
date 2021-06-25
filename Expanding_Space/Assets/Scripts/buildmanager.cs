@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class buildmanager : MonoBehaviour
 {
-    public static buildmanager instance;
+    public buildmanager instance;
     public GameObject sho;
     public bool i;
+
+    public bool Bal = false;
 
     private void Awake()
     {
@@ -46,6 +48,7 @@ public class buildmanager : MonoBehaviour
     private GameObject turrettobuild;
     public GameObject getturrettobuild()
     {
+        Bal = false;
         return turrettobuild;
     }
 
