@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour {
 
-    private Transform target;
+    public Transform target;
+    
+    public int damage = 25;
 
     public float speed = 70f;
-    public GameObject impactEffect;
+
+    // public GameObject impactEffect;
     public void Seek (Transform _target)
     {
         target = _target;
@@ -16,7 +19,7 @@ public class bullet : MonoBehaviour {
     {
         if (target == null)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             return;
         }
 
@@ -30,15 +33,20 @@ public class bullet : MonoBehaviour {
         }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+        transform.LookAt(target);
     }
 
-    void HitTarget ()
-    {
-        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 2f);
+   void HitTarget ()
+   {
+        Damage(target);
+        //GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+        //Destroy(effectIns, 2f);
+   }
 
-        Destroy(target.gameObject); 
-        //  Debug.Log("we hit something");
-        Destroy(gameObject);
+    void Damage (Transform enemy)
+    {
+        Enemy_AI EN = enemy.GetComponent<Enemy_AI>();
+
+        EN.TakeDamage(damage);
     }
 }

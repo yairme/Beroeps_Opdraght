@@ -15,8 +15,8 @@ public class Enemy_AI : MonoBehaviour
     [HideInInspector]
     public float speed;
 
-    public int startHealth = 100;
-    private float health;
+    private int startHealth;
+    public int health;
 
     public int value;
 
@@ -39,11 +39,12 @@ public class Enemy_AI : MonoBehaviour
 
     public void TakeDamage (int amount)
     {
-        health -= amount;
+        startHealth -= amount;
 
-        healthBar.fillAmount = health / startHealth;
+
+        healthBar.fillAmount = startHealth / health;
         
-        if (health <= 0)
+        if (startHealth <= 0)
         {
             Die();
         }
@@ -54,7 +55,6 @@ public class Enemy_AI : MonoBehaviour
         ST.Money += value;
         WS.EnemiesAlive--;
         Destroy(gameObject);
-
     }
 
     private void Update()

@@ -93,7 +93,7 @@ using UnityEngine;
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(PartToRotate.rotation, lookRotation, Time.deltaTime * turnspeed).eulerAngles;
-        PartToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+        PartToRotate.rotation = Quaternion.Euler(0f, 0f, rotation.z);
     }
         void Laser ()
         {

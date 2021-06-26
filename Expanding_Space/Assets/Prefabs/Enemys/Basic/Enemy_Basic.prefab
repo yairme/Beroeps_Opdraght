@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: -7239392449343640841}
   - component: {fileID: 2125085195488812833}
   - component: {fileID: 2125085195488812832}
+  - component: {fileID: 7549556020506941073}
   m_Layer: 0
   m_Name: Enemy_Basic
   m_TagString: Enemy
@@ -98,9 +99,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 5
   speed: 0
-  startHealth: 100
+  health: 100
   value: 10
   healthBar: {fileID: 1886583119}
+--- !u!58 &7549556020506941073
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -7051462773629756710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &455322232
 GameObject:
   m_ObjectHideFlags: 0
