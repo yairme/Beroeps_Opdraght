@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour {
 
-    public Transform target;
+    private Transform target;
     
     public int damage;
 
     public float speed;
     public float Explosion;
 
-    // public GameObject impactEffect;
     public void Seek (Transform _target)
     {
         target = _target;
@@ -48,17 +47,18 @@ public class bullet : MonoBehaviour {
         {
             Damage(target);
         }
-        //GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        //Destroy(effectIns, 2f);
    }
 
     void Explode()
     {
+        turret TR = GetComponent<turret>();
+
         Collider[] colliders = Physics.OverlapSphere(transform.position, Explosion);
         foreach (Collider collider in colliders)
         {
-            if (collider.tag == "Enemy")
+            if (collider.tag == TR.enemyTag)
             {
+                Debug.Log("Exploded");
                 Damage(collider.transform);
             }
         }

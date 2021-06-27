@@ -108,8 +108,7 @@ public class LaserTurret : MonoBehaviour
         if (!lineRenderer.enabled)
             lineRenderer.enabled = true;
 
-        lineRenderer.SetPosition(0, target.position);
-        lineRenderer.SetPosition(1, firepoint.position);
+        lineRenderer.SetPosition(1, target.position);
     }
 
     private void Shoot()
