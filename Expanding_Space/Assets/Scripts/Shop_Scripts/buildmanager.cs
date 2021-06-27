@@ -37,7 +37,7 @@ public class buildmanager : MonoBehaviour
 
     public GameObject standardturret;
     public GameObject laserturret;
-    public GameObject Missleturret;
+    public GameObject Missileturret;
 
     private void Start()
     {

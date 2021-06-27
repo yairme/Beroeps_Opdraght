@@ -56,12 +56,12 @@ public class shop : MonoBehaviour
             Debug.Log("Not enough money");
         }
     }
-    public void placemissle()
+    public void placemissile()
     {
         if (ST.Money >= 299)
         {
             BM.Bal = false;
-            Buildmanager.SetTurretToBuild(Buildmanager.Missleturret);
+            Buildmanager.SetTurretToBuild(Buildmanager.Missileturret);
             ST.Money -= 300;
         }
         else if (ST.Money <= 299)

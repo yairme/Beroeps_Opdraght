@@ -42,7 +42,6 @@ public class Placement : MonoBehaviour
         turret = (GameObject)Instantiate(TurretToBuild, transform.position, transform.rotation);
 
     }
-
     private void OnMouseEnter()
     {
         rend.material.color = hovercolor;

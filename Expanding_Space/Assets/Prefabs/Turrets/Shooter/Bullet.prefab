@@ -47,6 +47,7 @@ MonoBehaviour:
   target: {fileID: 0}
   damage: 50
   speed: 70
+  Explosion: 0
 --- !u!212 &-8719752675607243904
 SpriteRenderer:
   m_ObjectHideFlags: 0

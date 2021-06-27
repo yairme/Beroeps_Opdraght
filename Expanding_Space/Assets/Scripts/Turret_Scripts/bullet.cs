@@ -4,9 +4,10 @@ public class bullet : MonoBehaviour {
 
     public Transform target;
     
-    public int damage = 25;
+    public int damage;
 
-    public float speed = 70f;
+    public float speed;
+    public float Explosion;
 
     // public GameObject impactEffect;
     public void Seek (Transform _target)
@@ -29,6 +30,7 @@ public class bullet : MonoBehaviour {
         if (dir.magnitude <= distanceThisFrame)
         {
             HitTarget();
+            Destroy(this.gameObject);
             return;
         }
 
@@ -38,15 +40,37 @@ public class bullet : MonoBehaviour {
 
    void HitTarget ()
    {
-        Damage(target);
+        if (Explosion > 0f)
+        {
+            Explode();
+        }
+        else
+        {
+            Damage(target);
+        }
         //GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         //Destroy(effectIns, 2f);
    }
+
+    void Explode()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, Explosion);
+        foreach (Collider collider in colliders)
+        {
+            if (collider.tag == "Enemy")
+            {
+                Damage(collider.transform);
+            }
+        }
+    }
 
     void Damage (Transform enemy)
     {
         Enemy_AI EN = enemy.GetComponent<Enemy_AI>();
 
-        EN.TakeDamage(damage);
+        if (EN != null)
+        {
+            EN.TakeDamage(damage);
+        }
     }
 }

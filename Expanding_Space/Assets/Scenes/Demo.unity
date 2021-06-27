@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &354250852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Money: 400
-  Lives: 1
+  Lives: 25
 --- !u!114 &381455696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +803,14 @@ PrefabInstance:
       propertyPath: laserturret
       value: 
       objectReference: {fileID: 7853553964663590314, guid: 94931b194f679bc428ccf9731e8c34f8, type: 3}
+    - target: {fileID: 5592418590609639112, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
+      propertyPath: Missleturret
+      value: 
+      objectReference: {fileID: 8752738831089810466, guid: a40f6f8e119b12d4b9f5e3ed6046dfe9, type: 3}
+    - target: {fileID: 5592418590609639112, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
+      propertyPath: Missileturret
+      value: 
+      objectReference: {fileID: 8752738831089810466, guid: a40f6f8e119b12d4b9f5e3ed6046dfe9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0ab2e02adad918419c446a861633cdd, type: 3}
 --- !u!1 &702515928
@@ -1310,13 +1318,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4016609297397210394, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_Name
+      value: Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210395, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1382360073}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: placemissle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: shop, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210396, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016609297397210399, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: turret
+      value: 
+      objectReference: {fileID: 8752738831089810466, guid: a40f6f8e119b12d4b9f5e3ed6046dfe9, type: 3}
+    - target: {fileID: 4016609297397210399, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: shopmanager
+      value: 
+      objectReference: {fileID: 381455693}
+    - target: {fileID: 4016609298635320591, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_Text
+      value: 'Missile
+
+        $300'
+      objectReference: {fileID: 0}
     - target: {fileID: 7368180850831474002, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: build
       value: 
       objectReference: {fileID: 381455693}
     - target: {fileID: 7368180851228543018, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: m_Text
-      value: laser
+      value: 'Laser
+
+        $200'
       objectReference: {fileID: 0}
     - target: {fileID: 7368180851371341193, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: shopmanager
@@ -1369,6 +1433,10 @@ PrefabInstance:
     - target: {fileID: 7368180851910520664, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: shop, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368180851910520665, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7368180851910520670, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: m_Name
@@ -1481,18 +1549,24 @@ PrefabInstance:
     - target: {fileID: 7368180852397979706, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: turret
       value: 
-      objectReference: {fileID: 5342668206583854503, guid: a1452b715193b1841a9c4531398a1bc9, type: 3}
+      objectReference: {fileID: 7853553964663590314, guid: 94931b194f679bc428ccf9731e8c34f8, type: 3}
     - target: {fileID: 7368180852397979706, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: shopmanager
       value: 
       objectReference: {fileID: 381455693}
+    - target: {fileID: 7368180852397979710, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7368180852397979711, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: m_Name
-      value: laser
+      value: Laser
       objectReference: {fileID: 0}
     - target: {fileID: 7368180852632136648, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
       propertyPath: m_Text
-      value: standard
+      value: 'standard
+
+        $150'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
@@ -1782,6 +1856,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1382360067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4016609297397210394, guid: b9a03689cadef04459fa5181abf841e4, type: 3}
+  m_PrefabInstance: {fileID: 1264335713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1382360073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382360067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa10150c89f8f274bb836581ed493f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turret: {fileID: 0}
+  dashop: {fileID: 168597979}
 --- !u!4 &1457307591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3529136174842076973, guid: d8e027005dd23044480a65056e4fac06, type: 3}
@@ -2294,7 +2387,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10.1422205
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
