@@ -7,6 +7,7 @@ public class WaveSpawner : MonoBehaviour
 {
 
     private GameManager GM;
+    private levelchange LC;
 
     public int EnemiesAlive = 0;
 
@@ -24,6 +25,7 @@ public class WaveSpawner : MonoBehaviour
     void Start()
     {
         GM = GameObject.Find("GM").GetComponent<GameManager>();
+        LC = GameObject.Find("GM").GetComponent<levelchange>();
     }
 
     private void Update()
@@ -62,7 +64,7 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveNumber == waves.Length && EnemiesAlive <= 0)
         {
-            //LevelWin UI
+            LC.Win();
             this.enabled = false;
         }
     }

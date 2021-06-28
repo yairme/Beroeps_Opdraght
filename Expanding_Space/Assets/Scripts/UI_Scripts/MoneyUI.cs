@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MoneyUI : MonoBehaviour
 {
     public Text moneyText;
+    public Text liveText;
 
     private PlayerStats MN;
 
@@ -16,5 +17,6 @@ public class MoneyUI : MonoBehaviour
     void Update()
     {
         moneyText.text = "$" + MN.Money.ToString();
+        liveText.text = MN.Lives.ToString();
     }
 }

@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 518765951334419046}
   - component: {fileID: 1623863949898685886}
   - component: {fileID: 674486904239474859}
+  - component: {fileID: 163154652947788533}
   m_Layer: 0
-  m_Name: GameMaster
+  m_Name: GM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,3 +242,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 0}
+--- !u!114 &163154652947788533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306580434139221193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535551037b80e8a41b54afaa7336b15e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

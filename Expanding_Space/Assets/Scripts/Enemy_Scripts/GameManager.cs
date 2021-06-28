@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
     public bool gameEnded = false;
 
     private PlayerStats ST;
+    private levelchange LC;
 
     void Start()
     {
         ST = GameObject.Find("GM").GetComponent<PlayerStats>();
+        LC = GameObject.Find("GM").GetComponent<levelchange>();
     }
     public void Update()
     {
@@ -26,6 +28,6 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         gameEnded = true;
-        //GameOver UI
+        LC.Lose();
     }
 }

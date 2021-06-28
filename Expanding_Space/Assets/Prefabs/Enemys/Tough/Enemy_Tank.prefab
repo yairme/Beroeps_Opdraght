@@ -95,10 +95,30 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2f53a42221e97a647bbc486066ad29fb, type: 3}
+    - target: {fileID: 7605868180166490774, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e139ee0f6d5a0c47b6175bd670c5e8b, type: 3}
     - target: {fileID: 7978472769225967322, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c92d73f580ec9584fada34e88553aaff, type: 3}
+    - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+      propertyPath: spriteUp
+      value: 
+      objectReference: {fileID: 21300000, guid: 2f53a42221e97a647bbc486066ad29fb, type: 3}
+    - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+      propertyPath: spriteDown
+      value: 
+      objectReference: {fileID: 21300000, guid: c92d73f580ec9584fada34e88553aaff, type: 3}
+    - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 988dd8038dec1f44fbfdd3a099496238, type: 3}
+    - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e139ee0f6d5a0c47b6175bd670c5e8b, type: 3}
     - target: {fileID: 8484208493082861260, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
       propertyPath: m_IsActive
       value: 1

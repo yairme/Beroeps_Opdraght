@@ -6,33 +6,29 @@ public class TurningSprites : MonoBehaviour
 {
     private Enemy_Movement EN;
 
-    [SerializeField] private GameObject Top;
-    [SerializeField] private GameObject Right;
-    [SerializeField] private GameObject Down;
+    public Sprite spriteLeft, spriteRight, spriteUp, spriteDown;
 
     private void Start()
     {
-        EN = GetComponent<Enemy_Movement>();
+        EN = this.gameObject.GetComponent<Enemy_Movement>();
     }
     public void Update()
     {
-        if (EN.eulerAngZ == 90f)
+        if (EN.eulerAngZ <= 90f)
         {
-            Down.gameObject.SetActive(false);
-            Top.gameObject.SetActive(true);
-            Right.gameObject.SetActive(false);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteUp;
         }
-        if (EN.eulerAngZ == 0f)
+        if (EN.eulerAngZ <= 0f)
         {
-            Down.gameObject.SetActive(false);
-            Top.gameObject.SetActive(false);
-            Right.gameObject.SetActive(true);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteRight;
         }
-        if (EN.eulerAngZ == -90f)
+        if (EN.eulerAngZ <= -90f)
         {
-            Down.gameObject.SetActive(true);
-            Top.gameObject.SetActive(false);
-            Right.gameObject.SetActive(false);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteDown;
+        }
+        if (EN.eulerAngZ <= 180f)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteLeft;
         }
     }
 }

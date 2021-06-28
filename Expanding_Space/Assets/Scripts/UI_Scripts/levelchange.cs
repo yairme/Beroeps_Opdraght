@@ -13,8 +13,12 @@ public class levelchange : MonoBehaviour
     {
         SceneManager.LoadScene("mars");
     }
-    public void demo()
+    public void Lose()
     {
-        SceneManager.LoadScene("Demo");
+        SceneManager.LoadScene("LoseScreen");
+    }
+    public void Win()
+    {
+        SceneManager.LoadScene("WinScreen");
     }
 }

@@ -11,19 +11,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject C;
     [SerializeField] private GameObject D;
 
-    public void YouWin()
+    public void NewGame()
     {
         A.gameObject.SetActive(true);
         B.gameObject.SetActive(false);
-        C.gameObject.SetActive(false);
-        D.gameObject.SetActive(true);
-    }
-    public void Play()
-    {
-        A.gameObject.SetActive(true);
-        B.gameObject.SetActive(false);
-        C.gameObject.SetActive(false);
-        D.gameObject.SetActive(true);
+        C.gameObject.SetActive(true);
+        D.gameObject.SetActive(false);
     }
 
     public void Quit()
@@ -31,16 +24,14 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit!");
     }
-
-    public void optionsMenu()
+    public void MM()
     {
-        B.gameObject.SetActive(true);
-        A.gameObject.SetActive(false);
+        SceneManager.LoadScene("mainmenu");
     }
-
-    public void Back()
+    public void Load()
     {
-        B.gameObject.SetActive(false);
         A.gameObject.SetActive(true);
+        B.gameObject.SetActive(false);
     }
+
 }

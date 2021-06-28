@@ -75,5 +75,25 @@ PrefabInstance:
       propertyPath: startHealth
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4809039706512612135, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8292f3a728162d8468a4d38fd877a595, type: 3}
+    - target: {fileID: 6407685965777083134, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+      propertyPath: spriteUp
+      value: 
+      objectReference: {fileID: 21300000, guid: 03140b2084e6a8c42aa598d9a76558c8, type: 3}
+    - target: {fileID: 6407685965777083134, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+      propertyPath: spriteDown
+      value: 
+      objectReference: {fileID: 21300000, guid: 500ed4ae45fc593488f68b0eb2f3a95b, type: 3}
+    - target: {fileID: 6407685965777083134, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 568dc23a5ad5d634aa6077a09053044a, type: 3}
+    - target: {fileID: 6407685965777083134, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 8292f3a728162d8468a4d38fd877a595, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72fafac75382fd848ba7c3c396268555, type: 3}
