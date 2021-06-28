@@ -7,6 +7,7 @@ public class shop : MonoBehaviour
 {
     private PlayerStats ST;
     private buildmanager BM;
+    private Placement PS;
 
     private bool standard;
     private bool laser;
@@ -19,6 +20,7 @@ public class shop : MonoBehaviour
 
     private void Start()
     {
+        PS = GameObject.Find("Grid").GetComponent<Placement>();
         BM = GameObject.Find("GameMaster").GetComponent<buildmanager>();
         ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
         Buildmanager = BM.instance;
@@ -30,43 +32,47 @@ public class shop : MonoBehaviour
             dashop.SetActive(true);
         }
     }
-    public void placestandard()
+    public void Placestandard()
     {
-        if (ST.Money >= 149)
+        
+        if (ST.Money > 149)
         {
+            Debug.Log("w");
             BM.Bal = true;
             Buildmanager.SetTurretToBuild(Buildmanager.standardturret);
             ST.Money -= 150;
         }
-        else if (ST.Money <= 149)
+        else if (ST.Money < 149)
         {
-            Debug.Log("Not enough money");
+            PS.rend.material.color = Color.red;
         }
     }
-    public void placelaser()
+    public void Placelaser()
     {
-        if (ST.Money >= 199)
+        Debug.Log("s");
+        if (ST.Money > 199)
         {
             BM.Bal = true;
             Buildmanager.SetTurretToBuild(Buildmanager.laserturret);
             ST.Money -= 200;
         }
-        else if (ST.Money <= 199)
+        else if (ST.Money < 199)
         {
-            Debug.Log("Not enough money");
+            PS.rend.material.color = Color.red;
         }
     }
-    public void placemissile()
+    public void Placemissile()
     {
-        if (ST.Money >= 299)
+        Debug.Log("v");
+        if (ST.Money > 299)
         {
             BM.Bal = false;
             Buildmanager.SetTurretToBuild(Buildmanager.Missileturret);
             ST.Money -= 300;
         }
-        else if (ST.Money <= 299)
+        else if (ST.Money < 299)
         {
-            Debug.Log("Not enough money");
+            PS.rend.material.color = Color.red;
         }
     }
 }

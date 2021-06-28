@@ -6,12 +6,24 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    [SerializeField] private GameObject Main;
-    [SerializeField] private GameObject options;
+    [SerializeField] private GameObject A;
+    [SerializeField] private GameObject B;
+    [SerializeField] private GameObject C;
+    [SerializeField] private GameObject D;
 
+    public void YouWin()
+    {
+        A.gameObject.SetActive(true);
+        B.gameObject.SetActive(false);
+        C.gameObject.SetActive(false);
+        D.gameObject.SetActive(true);
+    }
     public void Play()
     {
-        SceneManager.LoadScene("LevelSelect");
+        A.gameObject.SetActive(true);
+        B.gameObject.SetActive(false);
+        C.gameObject.SetActive(false);
+        D.gameObject.SetActive(true);
     }
 
     public void Quit()
@@ -22,13 +34,13 @@ public class MainMenu : MonoBehaviour
 
     public void optionsMenu()
     {
-        options.gameObject.SetActive(true);
-        Main.gameObject.SetActive(false);
+        B.gameObject.SetActive(true);
+        A.gameObject.SetActive(false);
     }
 
     public void Back()
     {
-        options.gameObject.SetActive(false);
-        Main.gameObject.SetActive(true);
+        B.gameObject.SetActive(false);
+        A.gameObject.SetActive(true);
     }
 }

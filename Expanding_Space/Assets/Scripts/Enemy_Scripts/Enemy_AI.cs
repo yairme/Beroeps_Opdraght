@@ -24,8 +24,8 @@ public class Enemy_AI : MonoBehaviour
 
     private void Start()
     {
-        WS = GameObject.Find("GameMaster").GetComponent<WaveSpawner>();
-        ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+        WS = GameObject.Find("GM").GetComponent<WaveSpawner>();
+        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
 
         speed = startSpeed;
         health = startHealth;

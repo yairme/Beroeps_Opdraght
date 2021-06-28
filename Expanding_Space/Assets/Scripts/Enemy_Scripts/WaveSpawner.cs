@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -15,12 +16,14 @@ public class WaveSpawner : MonoBehaviour
 
     public float timeBetweenWaves = 60f;
     private float countdown = 6f;
+
+    public Text waveCountDownText;
     
     private int waveNumber = 0;
 
     void Start()
     {
-        GM = GameObject.Find("GameMaster").GetComponent<GameManager>();
+        GM = GameObject.Find("GM").GetComponent<GameManager>();
     }
 
     private void Update()
@@ -40,6 +43,10 @@ public class WaveSpawner : MonoBehaviour
         }
 
         countdown -= Time.deltaTime;
+
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+
+        waveCountDownText.text = string.Format("{0:00.00}", countdown);
     }
 
     IEnumerator SpawnWave()
@@ -53,7 +60,7 @@ public class WaveSpawner : MonoBehaviour
         }
         waveNumber++;
 
-        if (waveNumber == waves.Length)
+        if (waveNumber == waves.Length && EnemiesAlive <= 0)
         {
             //LevelWin UI
             this.enabled = false;

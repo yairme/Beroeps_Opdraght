@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
     }
     public void Update()
     {

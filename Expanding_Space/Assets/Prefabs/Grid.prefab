@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hovercolor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  activeshop: 0
+  dashop: {fileID: 0}
 --- !u!61 &1257817140080114059
 BoxCollider2D:
   m_ObjectHideFlags: 0

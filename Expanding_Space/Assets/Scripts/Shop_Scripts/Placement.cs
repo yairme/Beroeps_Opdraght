@@ -8,7 +8,7 @@ public class Placement : MonoBehaviour
 
     public Color hovercolor;
     private Color startcolor;
-    private SpriteRenderer rend;
+    [HideInInspector]public SpriteRenderer rend;
     private GameObject turret;
     public bool activeshop;
     public GameObject dashop;
@@ -17,7 +17,7 @@ public class Placement : MonoBehaviour
     buildmanager Buildmanager;
     private void Start()
     {
-        BM = GameObject.Find("GameMaster").GetComponent<buildmanager>();
+        BM = GameObject.Find("GM").GetComponent<buildmanager>();
         rend = GetComponent<SpriteRenderer>();
         startcolor = rend.material.color;
         build = dashop.GetComponent<shop>();

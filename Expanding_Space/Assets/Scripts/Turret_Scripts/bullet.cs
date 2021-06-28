@@ -51,15 +51,13 @@ public class bullet : MonoBehaviour {
 
     void Explode()
     {
-        turret TR = GetComponent<turret>();
-
         Collider[] colliders = Physics.OverlapSphere(transform.position, Explosion);
-        foreach (Collider collider in colliders)
+        foreach (Collider Collider in colliders)
         {
-            if (collider.tag == TR.enemyTag)
+            if (Collider.tag == "Enemy")
             {
                 Debug.Log("Exploded");
-                Damage(collider.transform);
+                Damage(Collider.transform);
             }
         }
     }
