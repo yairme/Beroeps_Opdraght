@@ -20,9 +20,9 @@ public class shop : MonoBehaviour
 
     private void Start()
     {
-        PS = GameObject.Find("Grid").GetComponent<Placement>();
-        BM = GameObject.Find("GameMaster").GetComponent<buildmanager>();
-        ST = GameObject.Find("GameMaster").GetComponent<PlayerStats>();
+        PS = GameObject.FindGameObjectWithTag("Grid").GetComponent<Placement>();
+        BM = GameObject.Find("GM").GetComponent<buildmanager>();
+        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
         Buildmanager = BM.instance;
     }
     private void Update()
@@ -34,7 +34,11 @@ public class shop : MonoBehaviour
     }
     public void Placestandard()
     {
-        
+        if (PS == null)
+        {
+            PS = GameObject.FindGameObjectWithTag("Grid").GetComponent<Placement>();
+        }
+
         if (ST.Money > 149)
         {
             Debug.Log("w");

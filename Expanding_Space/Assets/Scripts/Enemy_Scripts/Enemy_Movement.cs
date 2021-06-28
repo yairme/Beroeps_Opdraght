@@ -7,16 +7,18 @@ public class Enemy_Movement : MonoBehaviour
     private WayPoints WP;
     private WaveSpawner WS;
     private PlayerStats ST;
+    [SerializeField]
     private Enemy_AI EN;
 
-    public Transform target;
+    protected Transform target;
     protected int wavepointIndex = 0;
 
     public float eulerAngZ;
 
     private void Start()
     {
-        WP = GameObject.Find("waypoint").GetComponent<WayPoints>();
+        //WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
+        WP = GameObject.FindWithTag("WayPoints").GetComponent<WayPoints>();
         WS = GameObject.Find("GM").GetComponent<WaveSpawner>();
         ST = GameObject.Find("GM").GetComponent<PlayerStats>();
 
@@ -26,11 +28,19 @@ public class Enemy_Movement : MonoBehaviour
     }
     private void Update()
     {
+        if (target != null)
+        {
+            Vector2 dir = target.position - transform.position;
+            transform.Translate(dir.normalized * EN.speed * Time.deltaTime, Space.World);
+        }
+        else
+        {
+            //WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
+            WP = GameObject.FindWithTag("WayPoints").GetComponent<WayPoints>();
+            target = WP.wpoints[0];
+        }
 
-        Vector2 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * EN.speed * Time.deltaTime, Space.World);
-
-        if (Vector2.Distance(transform.position, target.position) <= 0.2f)
+            if (Vector2.Distance(transform.position, target.position) <= 0.2f)
         {
             GetNextWaypoint();
         }

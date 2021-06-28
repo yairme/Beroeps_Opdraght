@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64772f60c1d0214ca952b715176e081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wavepointIndex: 0
+  EN: {fileID: 2125085195488812832}
   eulerAngZ: 0
 --- !u!114 &6407685965777083134
 MonoBehaviour:

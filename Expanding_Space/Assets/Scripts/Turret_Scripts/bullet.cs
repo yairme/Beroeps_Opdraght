@@ -51,15 +51,14 @@ public class bullet : MonoBehaviour {
 
     void Explode()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, Explosion);
-        foreach (Collider Collider in colliders)
-        {
-            if (Collider.tag == "Enemy")
+        Collider2D colliders = Physics2D.OverlapCircle(transform.position, Explosion);
+      
+            if (colliders.tag == "Enemy")
             {
                 Debug.Log("Exploded");
-                Damage(Collider.transform);
+                Damage(colliders.transform);
             }
-        }
+        
     }
 
     void Damage (Transform enemy)
@@ -70,5 +69,11 @@ public class bullet : MonoBehaviour {
         {
             EN.TakeDamage(damage);
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(transform.position, Explosion);
     }
 }
