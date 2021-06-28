@@ -76,7 +76,7 @@ public class turret : MonoBehaviour
         if (bullet != null)
             bullet.Seek(target);
     }
-    public void OnDrawGizmoSelected ()
+    public void OnDrawGizmosSelected ()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
