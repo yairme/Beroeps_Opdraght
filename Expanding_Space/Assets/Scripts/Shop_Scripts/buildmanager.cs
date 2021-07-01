@@ -4,49 +4,33 @@ using UnityEngine;
 
 public class buildmanager : MonoBehaviour
 {
-    public buildmanager instance;
-    public GameObject sho;
+    [HideInInspector] public buildmanager instance;
     public bool i;
 
     public bool Bal = false;
 
-    private void Awake()
+    public void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.LogError("more than one buildmanager");
             return;
         }
         instance = this;
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            i = !i;
-            if (i)
-            {
-                sho.SetActive(true);
-            }
-            else
-            {
-                sho.SetActive(false);
-            }
-        }
-    }
 
     public GameObject standardturret;
     public GameObject laserturret;
     public GameObject Missileturret;
 
-    private void Start()
+    public void Start()
     {
         turrettobuild = standardturret;
-        
     }
 
     private GameObject turrettobuild;
-    public GameObject getturrettobuild()
+
+    public GameObject Getturrettobuild()
     {
         Bal = false;
         return turrettobuild;

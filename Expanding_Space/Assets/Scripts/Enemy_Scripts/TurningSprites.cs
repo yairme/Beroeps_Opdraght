@@ -8,27 +8,38 @@ public class TurningSprites : MonoBehaviour
 
     public Sprite spriteLeft, spriteRight, spriteUp, spriteDown;
 
-    private void Start()
+    public void Start()
     {
         EN = this.gameObject.GetComponent<Enemy_Movement>();
     }
     public void Update()
     {
-        if (EN.eulerAngZ <= 90f)
+        EN = this.gameObject.GetComponent<Enemy_Movement>();
+        if (EN != null)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteUp;
+            if (EN.eulerAngZ >= 70 && EN.eulerAngZ <= 110)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteUp;
+            }
+
+            if (EN.eulerAngZ >= 340 || EN.eulerAngZ <= 10)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteRight;
+            }
+
+            if (EN.eulerAngZ >= 260 && EN.eulerAngZ <= 280)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteDown;
+            }
+
+            if (EN.eulerAngZ >= 170 && EN.eulerAngZ <= 190)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteLeft;
+            }
         }
-        if (EN.eulerAngZ <= 0f)
+        else
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteRight;
-        }
-        if (EN.eulerAngZ <= -90f)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteDown;
-        }
-        if (EN.eulerAngZ <= 180f)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteLeft;
+            EN = this.gameObject.GetComponent<Enemy_Movement>();
         }
     }
 }

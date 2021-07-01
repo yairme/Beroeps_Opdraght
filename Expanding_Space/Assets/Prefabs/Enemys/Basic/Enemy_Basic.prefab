@@ -97,8 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteLeft: {fileID: 21300000, guid: 94f3ac6d4e1c8644fa9a41731e8493b9, type: 3}
   spriteRight: {fileID: 21300000, guid: ed5d1c14398cad04982dd343855d670a, type: 3}
-  spriteUp: {fileID: 21300000, guid: 60013a1804bc19848bb9c51751449fbc, type: 3}
-  spriteDown: {fileID: 21300000, guid: 985db69f06137a041981105c2aafbf1d, type: 3}
+  spriteUp: {fileID: 21300000, guid: 41490e5dc23ada446921bf6df124549c, type: 3}
+  spriteDown: {fileID: 21300000, guid: cb300530d9a39094783f55febabe9cbf, type: 3}
 --- !u!212 &4809039706512612135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ed5d1c14398cad04982dd343855d670a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -176,7 +176,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455322232}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
@@ -186,8 +186,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.01, y: 0.96}
-  m_SizeDelta: {x: 84.3312, y: 22.0237}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 84.5341, y: 11.4716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &455322235
 Canvas:
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6196b7031bf1634fa752f271966e1d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1b1a5e0c7a2ac549b44b6421fde4b82, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 1886583118}
   - component: {fileID: 1886583120}
   - component: {fileID: 1886583119}
+  - component: {fileID: 3130898891710553107}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -401,3 +402,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3130898891710553107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886583117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a0805fc649754cbb74fb5410a1c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteLeft: {fileID: 0}
+  spriteRight: {fileID: 0}
+  spriteUp: {fileID: 0}
+  spriteDown: {fileID: 0}

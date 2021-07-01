@@ -7,6 +7,7 @@ public class Enemy_Movement : MonoBehaviour
     private WayPoints WP;
     private WaveSpawner WS;
     private PlayerStats ST;
+
     [SerializeField]
     private Enemy_AI EN;
 
@@ -15,19 +16,21 @@ public class Enemy_Movement : MonoBehaviour
 
     public float eulerAngZ;
 
-    private void Start()
+    public void Start()
     {
-        //WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
         WP = GameObject.FindWithTag("WayPoints").GetComponent<WayPoints>();
-        WS = GameObject.Find("GM").GetComponent<WaveSpawner>();
-        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
+        WS = GameObject.FindWithTag("GM").GetComponent<WaveSpawner>();
+        ST = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
 
         target = WP.wpoints[0];
-        eulerAngZ = transform.localEulerAngles.z;
+
         EN = this.gameObject.GetComponent<Enemy_AI>();
     }
-    private void Update()
-    {
+
+    public void Update()
+    { 
+        eulerAngZ = transform.localEulerAngles.z;
+
         if (target != null)
         {
             Vector2 dir = target.position - transform.position;
@@ -35,12 +38,11 @@ public class Enemy_Movement : MonoBehaviour
         }
         else
         {
-            //WP = GameObject.Find("Waypoint").GetComponent<WayPoints>();
             WP = GameObject.FindWithTag("WayPoints").GetComponent<WayPoints>();
             target = WP.wpoints[0];
         }
 
-            if (Vector2.Distance(transform.position, target.position) <= 0.2f)
+        if (Vector2.Distance(transform.position, target.position) <= 0.2f)
         {
             GetNextWaypoint();
         }
@@ -52,7 +54,7 @@ public class Enemy_Movement : MonoBehaviour
         EN.speed = EN.startSpeed;
     }
 
-    void GetNextWaypoint()
+    private void GetNextWaypoint()
     {
         if (wavepointIndex >= WP.wpoints.Length - 1)
         {
@@ -64,7 +66,7 @@ public class Enemy_Movement : MonoBehaviour
         target = WP.wpoints[wavepointIndex];
     }
 
-    void EndPath()
+    private void EndPath()
     {
         ST.Lives--;
         WS.EnemiesAlive--;

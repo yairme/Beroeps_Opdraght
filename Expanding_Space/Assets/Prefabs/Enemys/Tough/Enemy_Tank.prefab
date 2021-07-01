@@ -106,11 +106,11 @@ PrefabInstance:
     - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
       propertyPath: spriteUp
       value: 
-      objectReference: {fileID: 21300000, guid: 2f53a42221e97a647bbc486066ad29fb, type: 3}
+      objectReference: {fileID: 21300000, guid: 00b7d0969bc44b64aa796de96d28ee58, type: 3}
     - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
       propertyPath: spriteDown
       value: 
-      objectReference: {fileID: 21300000, guid: c92d73f580ec9584fada34e88553aaff, type: 3}
+      objectReference: {fileID: 21300000, guid: a219fbac6eec04344b9f6252dc81a934, type: 3}
     - target: {fileID: 8348812252124412751, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
       propertyPath: spriteLeft
       value: 

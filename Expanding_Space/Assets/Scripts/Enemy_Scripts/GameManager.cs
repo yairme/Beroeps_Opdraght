@@ -9,19 +9,25 @@ public class GameManager : MonoBehaviour
     private PlayerStats ST;
     private levelchange LC;
 
-    void Start()
+    public void Start()
     {
-        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
-        LC = GameObject.Find("GM").GetComponent<levelchange>();
+        ST = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
+        LC = GameObject.FindWithTag("GM").GetComponent<levelchange>();
     }
     public void Update()
     {
         if (gameEnded)
             return;
-        
-        if (ST.Lives <= 0)
+        if (ST != null)
         {
-            EndGame();
+            if (ST.Lives <= 0)
+            {
+                EndGame();
+            }
+        }
+        else
+        {
+            ST = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
         }
     }
 

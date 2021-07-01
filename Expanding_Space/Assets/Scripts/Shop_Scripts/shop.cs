@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class shop : MonoBehaviour
 {
@@ -9,28 +8,17 @@ public class shop : MonoBehaviour
     private buildmanager BM;
     private Placement PS;
 
-    private bool standard;
-    private bool laser;
-    private bool missle;
-    [HideInInspector]public GameObject turret;
-    public GameObject dashop;
-    private GameObject grid;
+    [HideInInspector] public GameObject turret;
 
-    buildmanager Buildmanager;
+    [HideInInspector] public int returnMoneyB = 0;
+    [HideInInspector] public int returnMoney;
 
-    private void Start()
+    public void Start()
     {
         PS = GameObject.FindGameObjectWithTag("Grid").GetComponent<Placement>();
-        BM = GameObject.Find("GM").GetComponent<buildmanager>();
-        ST = GameObject.Find("GM").GetComponent<PlayerStats>();
-        Buildmanager = BM.instance;
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            dashop.SetActive(true);
-        }
+        BM = GameObject.FindWithTag("GM").GetComponent<buildmanager>();
+        ST = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
+        returnMoney = returnMoneyB;
     }
     public void Placestandard()
     {
@@ -41,42 +29,60 @@ public class shop : MonoBehaviour
 
         if (ST.Money > 149)
         {
-            Debug.Log("w");
             BM.Bal = true;
-            Buildmanager.SetTurretToBuild(Buildmanager.standardturret);
+            BM.SetTurretToBuild(BM.standardturret);
             ST.Money -= 150;
+            returnMoney = 150;
         }
         else if (ST.Money < 149)
         {
-            PS.rend.material.color = Color.red;
+            RenderColor();
         }
     }
+
     public void Placelaser()
     {
-        Debug.Log("s");
+        if (PS == null)
+        {
+            PS = GameObject.FindGameObjectWithTag("Grid").GetComponent<Placement>();
+        }
+
         if (ST.Money > 199)
         {
             BM.Bal = true;
-            Buildmanager.SetTurretToBuild(Buildmanager.laserturret);
+            BM.SetTurretToBuild(BM.laserturret);
             ST.Money -= 200;
+            returnMoney = 200;
         }
-        else if (ST.Money < 199)
+        else if (ST.Money <= 199)
         {
-            PS.rend.material.color = Color.red;
+            RenderColor();
         }
     }
+
     public void Placemissile()
     {
-        Debug.Log("v");
+        if (PS == null)
+        {
+            PS = GameObject.FindGameObjectWithTag("Grid").GetComponent<Placement>();
+        }
+
         if (ST.Money > 299)
         {
-            BM.Bal = false;
-            Buildmanager.SetTurretToBuild(Buildmanager.Missileturret);
+            BM.Bal = true;
+            BM.SetTurretToBuild(BM.Missileturret);
             ST.Money -= 300;
+            returnMoney = 300;
         }
-        else if (ST.Money < 299)
+        else if (ST.Money <= 299)
         {
-            PS.rend.material.color = Color.red;
+            RenderColor();
         }
+    }
+
+    void RenderColor()
+    {
+        PS.rend.material.color = Color.red;
+        PS.rend.material.color = PS.startcolor;
     }
 }

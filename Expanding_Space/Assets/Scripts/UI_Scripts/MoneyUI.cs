@@ -7,16 +7,29 @@ public class MoneyUI : MonoBehaviour
 {
     public Text moneyText;
     public Text liveText;
+    public Text Wave;
 
     private PlayerStats MN;
+    private WaveSpawner WV;
 
-    private void Start()
+    public void Start()
     {
-        MN = GameObject.Find("GM").GetComponent<PlayerStats>();
+        MN = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
+        WV = GameObject.FindWithTag("GM").GetComponent<WaveSpawner>();
     }
-    void Update()
+
+    public void Update()
     {
-        moneyText.text = "$" + MN.Money.ToString();
-        liveText.text = MN.Lives.ToString();
+        if (MN != null || MN != null)
+        {
+            moneyText.text = "$" + MN.Money.ToString();
+            liveText.text = "Lives: " + MN.Lives.ToString();
+            Wave.text = "Wave: " + WV.waveNumber.ToString();
+        }
+        else
+        {
+            MN = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
+        }
+
     }
 }

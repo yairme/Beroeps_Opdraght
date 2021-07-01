@@ -5,48 +5,51 @@ using UnityEngine;
 public class Placement : MonoBehaviour
 {
     private buildmanager BM;
+    private shop PS;
+    private PlayerStats ST;
 
     public Color hovercolor;
-    private Color startcolor;
+    [HideInInspector]public Color startcolor;
     [HideInInspector]public SpriteRenderer rend;
     private GameObject turret;
     public bool activeshop;
-    public GameObject dashop;
-    private shop build;
 
-    buildmanager Buildmanager;
-    private void Start()
+
+    public void Start()
     {
-        BM = GameObject.Find("GM").GetComponent<buildmanager>();
+        BM = GameObject.FindWithTag("GM").GetComponent<buildmanager>();
+        PS = GameObject.FindWithTag("Shop").GetComponent<shop>();
+        ST = GameObject.FindWithTag("GM").GetComponent<PlayerStats>();
+
         rend = GetComponent<SpriteRenderer>();
         startcolor = rend.material.color;
-        build = dashop.GetComponent<shop>();
-        Buildmanager = BM.instance;
     }
 
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (BM.Bal == false)
             return;
-        if(Buildmanager.getturrettobuild() == null)
+        if(BM.instance.Getturrettobuild() == null)
         {
             return;
         }
         if(turret != null)
         {
             Debug.Log("already build here TODO: display on screen");
+            ST.Money += PS.returnMoney;
+            PS.returnMoney = PS.returnMoneyB;
             return;
         }
-        GameObject TurretToBuild = Buildmanager.getturrettobuild();
+        GameObject TurretToBuild = BM.instance.Getturrettobuild();
         turret = (GameObject)Instantiate(TurretToBuild, transform.position, transform.rotation);
 
     }
-    private void OnMouseEnter()
+    public void OnMouseEnter()
     {
         rend.material.color = hovercolor;
     }
-    private void OnMouseExit()
+    public void OnMouseExit()
     {
         rend.material.color = startcolor;
     }

@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mainmenu.unity
     guid: 649b362ab6ff7f74cbb948c931498b9a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LevelSelect.unity
     guid: 3ea4e055d6a52f342884d96b9440f7ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo.unity
     guid: 550f4aa942aa25c4d9278957859f570a
-  - enabled: 1
+  - enabled: 0
     path: Assets/shop/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/moon.unity
     guid: 6a386a2d66045ef42a65223a5fd90ee9
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 13222b446e095764fa66cc220c9c6f34
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 712206811c9f44b41923a99b7a249e49
   m_configObjects: {}

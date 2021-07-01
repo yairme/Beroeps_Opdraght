@@ -1,21 +1,22 @@
 using UnityEngine;
+using System.Collections;
 
-public class bullet : MonoBehaviour {
-
+public class bullet : MonoBehaviour
+{
     private Transform target;
-    
+
     public int damage;
 
     public float speed;
     public float Explosion;
 
-    public void Seek (Transform _target)
+    public void Seek(Transform _target)
     {
         target = _target;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (target == null)
         {
@@ -29,7 +30,6 @@ public class bullet : MonoBehaviour {
         if (dir.magnitude <= distanceThisFrame)
         {
             HitTarget();
-            Destroy(this.gameObject);
             return;
         }
 
@@ -37,41 +37,42 @@ public class bullet : MonoBehaviour {
         transform.LookAt(target);
     }
 
-   void HitTarget ()
-   {
+    private void HitTarget()
+    {
         if (Explosion > 0f)
         {
-            Explode();
+            Explode(transform.position, Explosion);
         }
         else
         {
             Damage(target);
         }
-   }
-
-    void Explode()
-    {
-        Collider2D colliders = Physics2D.OverlapCircle(transform.position, Explosion);
-      
-            if (colliders.tag == "Enemy")
-            {
-                Debug.Log("Exploded");
-                Damage(colliders.transform);
-            }
-        
     }
 
-    void Damage (Transform enemy)
+    private void Explode(Vector3 center, float radius)
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
+        foreach (Collider2D collider in hitColliders)
+        {
+            if (collider.tag == "Enemy")
+            {
+                Damage(collider.transform);
+            }
+        }
+    }
+
+    private void Damage(Transform enemy)
     {
         Enemy_AI EN = enemy.GetComponent<Enemy_AI>();
 
         if (EN != null)
         {
             EN.TakeDamage(damage);
+            Destroy(this.gameObject);
         }
     }
 
-    private void OnDrawGizmosSelected()
+    public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(transform.position, Explosion);

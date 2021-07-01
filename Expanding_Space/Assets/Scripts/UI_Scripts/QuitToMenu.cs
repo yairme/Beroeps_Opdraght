@@ -5,41 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class QuitToMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject Settings;
-    [SerializeField] private GameObject PauseMenu;
-    public bool SettingsActive;
+    private pause GM;
+    public GameObject A;
+    public GameObject B;
+
+    private void Start()
+    {
+        GM = GameObject.FindWithTag("GM").GetComponent<pause>();
+    }
 
     public void Quit()
     {
+        
         Time.timeScale = 1f;
         SceneManager.LoadScene("mainmenu");
     }
 
-    public void settings()
+    public void ReLoad()
     {
-        Settings.SetActive(true);
-        PauseMenu.SetActive(false);
-        SettingsActive = true;
-    }
-    public void Back()
-    {
-        PauseMenu.SetActive(true);
-        Settings.SetActive(false);
-        SettingsActive = false;
+        
+        GM.PausedMenu = !GM.PausedMenu;
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        Time.timeScale = 1f;
+        GM.alreadypausedB = !GM.alreadypausedB;
     }
     public void Resume()
     {
-        PauseMenu.SetActive(false);
+        GM.PausedMenu = !GM.PausedMenu;
+        B.SetActive(false);
         Time.timeScale = 1;
+        GM.alreadypausedB = !GM.alreadypausedB;
     }
-
-    /*
-    public bool GetSettings()
-    {
-        return SettingsActive;
-    }
-    */
-
-
-
 }

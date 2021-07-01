@@ -9,26 +9,24 @@ public class pause : MonoBehaviour
 
     public GameObject pausetext;
     public GameObject pausemenu;
-    //zorgt ervoor dat niet beide pause manier tergelijke tijd gebruikt kunnen worden
+
     private bool alreadypausedA = false;
-    private bool alreadypausedB = false;
+    [HideInInspector] public bool alreadypausedB = false;
 
-    public GameObject Settings;
-    private QuitToMenu Quit;
-
-    private void Start()
-    {
-    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)&&!alreadypausedB)
         {
+            if (alreadypausedB == true)
+                return;
             gameIsPaused = !gameIsPaused;
             PauseGame();
             alreadypausedA = !alreadypausedA;
         }
         if (Input.GetKeyDown(KeyCode.Escape)&&!alreadypausedA)
         {
+            if (alreadypausedA == true)
+                return;
             PausedMenu = !PausedMenu;
             PausingMenu();
             alreadypausedB = !alreadypausedB;
@@ -62,10 +60,4 @@ public class pause : MonoBehaviour
             Time.timeScale = 1;
         }
     }
-    /*
-    public void SetSetttings(QuitToMenu set)
-    {
-        Settings = set;
-    }
-    */
 }

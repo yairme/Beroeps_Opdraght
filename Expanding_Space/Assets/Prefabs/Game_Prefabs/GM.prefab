@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
-  sho: {fileID: 0}
   i: 0
   Bal: 0
   standardturret: {fileID: 5342668206583854503, guid: a1452b715193b1841a9c4531398a1bc9, type: 3}
@@ -186,7 +185,7 @@ MonoBehaviour:
     - {fileID: 3305094340356705065, guid: e65934ddc6b06034fae59f3900b6ce11, type: 3}
     - {fileID: 3824812938720689003, guid: 98a50a67727767347946e3fb4ecc9941, type: 3}
     - {fileID: 7494381061639633291, guid: ed220973fdb2e5843977528faf9bd32f, type: 3}
-  - count: 50
+  - count: 40
     rate: 1
     enemy:
     - {fileID: 7475081264882670865, guid: 0835e8f1c8388ef468d6310bca33d5c0, type: 3}
@@ -200,8 +199,9 @@ MonoBehaviour:
     enemy:
     - {fileID: 2097036967012784513, guid: 551c44ecfe541c04b873867ca2e248ca, type: 3}
   spawnPoint: {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
   waveCountDownText: {fileID: 0}
+  waveNumber: 0
 --- !u!114 &518765951334419046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 0}
+  liveText: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!114 &163154652947788533
 MonoBehaviour:
   m_ObjectHideFlags: 0

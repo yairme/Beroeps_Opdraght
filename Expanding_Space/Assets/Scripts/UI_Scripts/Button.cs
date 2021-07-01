@@ -5,10 +5,11 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     [HideInInspector] public Inventory inv;
-    public GameObject shopmanager;
-    public GameObject turret;
     [HideInInspector] public bool hasbought;
-    [HideInInspector]public bool follow;
+    [HideInInspector] public bool follow;
+    
+    public GameObject turret;
+    public GameObject shopmanager;
     public void Start()
     {
         inv = shopmanager.GetComponent<Inventory>();

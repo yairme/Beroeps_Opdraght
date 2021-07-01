@@ -5,24 +5,21 @@ using TMPro;
 
 public class pauseanim : MonoBehaviour
 {
-    public GameObject GameManager;
+    private pause GM;
     public GameObject pausetext;
-    private pause paused;
     Animator pausing;
-
 
     private void Start()
     {
-        paused = GameManager.GetComponent<pause>();
+        GM = GameObject.FindWithTag("GM").GetComponent<pause>();
         pausing = pausetext.GetComponent<Animator>();
 
     }
     private void Update()
     {
-        if (paused.gameIsPaused)
+        if (GM.gameIsPaused)
         {
-            pausetext.gameObject.SetActive(true);
-            //pausing.Play("pausing");
+            pausetext.SetActive(true);
         }
     }
     
@@ -32,5 +29,4 @@ public class pauseanim : MonoBehaviour
         yield return new WaitForSeconds(0.167f);
         
     }
-    
 }
