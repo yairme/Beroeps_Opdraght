@@ -16,13 +16,66 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject StandardTurretPrefab;
+    public GameObject RocketTurretPrefab;
 
-    void Start ()
-    {
-        turretToBuild = StandardTurretPrefab;
+    private TurretBlueprint turretToBuild;
+    private Node selectedNode;
+
+    public nodeUi nodeUi;
+
+    public GameObject LaserTurretPrefab;
+    public GameObject BarrleTurretPrefab;
+    public GameObject OilPump;
+    public GameObject Mortar;
+
+
+    public bool CanBuild { get { return turretToBuild != null; } }
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
+
+    //GameObject turretToBuild = buildmanager.SelectTurretToBuild(turret: TurretBlueprint);
+    //turret = (GameObject) Instantiate(turretToBuild, transform.position, transform.rotation);
+    public void BuildTurretOn (Node node)
+    {   
+        if (PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log("Not enough money!");
+            return;
+        }
+
+        PlayerStats.Money -= turretToBuild.cost;
+
+        GameObject turret = (GameObject) Instantiate(turretToBuild.prefab, node.GetBuildPosition(),Quaternion.identity);
+
+        node.turret = turret;
+
+        Debug.Log("Turret Build! Money left " + PlayerStats.Money);
     }
-    private GameObject turretToBuild;
-    public GameObject GetTurretToBuild ()
+    public void SelectNode (Node node)
+    {
+        if (selectedNode == node)
+        {
+            DeselectNode();
+            return;
+        }
+
+        selectedNode = node;
+        turretToBuild = null;
+
+        nodeUi.Settarget(node);
+    }
+    public void DeselectNode()
+    {
+        selectedNode = null;
+        nodeUi.Hide();
+    }
+    public void SelectTurretToBuild(TurretBlueprint turret)
+    {
+        turretToBuild = turret;
+        
+        DeselectNode();
+    }
+
+    public TurretBlueprint GetTurretToBuild ()
     {
         return turretToBuild;
     }

@@ -4,6 +4,10 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 10f;
 
+    public float health = 100;
+
+    public int value = 50;
+
     [SerializeField] private Transform target;
     private int wavepointIndex = 0;
 
@@ -20,6 +24,24 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = waypoints.points[0];
+    }
+
+    public void TakeDamege (float amount)
+    {
+        health -= amount;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die ()
+    {
+        PlayerStats.Money += value;
+        Destroy(gameObject);
+
+        //gameObject effect = (gameObject)Instantiate(DeathEffect, )
     }
 
     void Update ()
@@ -39,10 +61,17 @@ public class Enemy : MonoBehaviour
        // Debug.Log("next wp!!");
         if (wavepointIndex >= waypoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            EndPath();
             return;
         }
         wavepointIndex++;
         SetTarget(waypoints.points[wavepointIndex]);
+    }
+
+    void EndPath ()
+    {
+        PlayerStats.Lives--;
+        Destroy(gameObject);
     }
 }

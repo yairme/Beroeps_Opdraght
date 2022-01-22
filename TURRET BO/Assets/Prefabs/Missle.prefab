@@ -219,7 +219,7 @@ Transform:
   m_GameObject: {fileID: 2708744018270273979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.016, y: 2.294, z: -0.053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2708744017164469615}
   m_Father: {fileID: 0}
@@ -238,8 +238,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  damage: 100
   ExplosionRadius: 10
-  impactEffect: {fileID: 3211549880296871651, guid: 94139b73dbd412c4e9cf525b32c212e7, type: 3}
+  impactEffect: {fileID: 6514597954507395928, guid: 39464b6fee892074481401712cf5cefc, type: 3}
 --- !u!65 &8472041513298432056
 BoxCollider:
   m_ObjectHideFlags: 0

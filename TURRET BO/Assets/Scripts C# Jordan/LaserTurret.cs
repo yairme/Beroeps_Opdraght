@@ -19,6 +19,10 @@ using UnityEngine;
         [Header("Use Laser")]
         public bool useLaser = false;
         public LineRenderer lineRenderer;
+        public GameObject ImpactEffect;
+        public Light impactLight;
+
+        public int damegeOverTime = 30;
 
         [Header("Unity Setup Fields")]
 
@@ -66,7 +70,12 @@ using UnityEngine;
             if (useLaser)
             {
                 if (lineRenderer.enabled)
+                {
                     lineRenderer.enabled = false;
+                    ImpactEffect.GetComponent<ParticleSystem>().Stop();
+                    impactLight.enabled = false;
+                    //ImpactEffect.GetComponent<ParticleSystem>().Stop();
+                }
             }
             return;
         }
@@ -97,11 +106,31 @@ using UnityEngine;
     }
         void Laser ()
         {
+        target.GetComponent<Enemy>().TakeDamege(damegeOverTime * Time.deltaTime);
+
         if (!lineRenderer.enabled)
+        {
+            //GameObject laserEffect = Instantiate(ImpactEffect, target.position, Quaternion.identity);
             lineRenderer.enabled = true;
+            //ImpactEffect.Play();
+            //laserEffect.transform.parent = target.transform;
+            //laserEffect.Play();
+            //this.ImpactEffect.Play();
+            impactLight.enabled = true;
+            //keeps the particles from not dying
+        }
+            ImpactEffect.GetComponent <ParticleSystem>().Play();
 
         lineRenderer.SetPosition(0, firepoint.position);
         lineRenderer.SetPosition(1, target.position);
+
+        Vector3 dir = firepoint.position - target.position;
+ 
+
+        ImpactEffect.transform.position = target.position + dir.normalized * .1f;
+        ImpactEffect.transform.rotation = Quaternion.LookRotation(dir);
+ 
+
         }
         void Shoot()
         {
