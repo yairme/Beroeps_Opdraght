@@ -4,7 +4,7 @@ public class CameraControl : MonoBehaviour
 {
     private bool doMovement = true;
 
-    public float panSpeed = 30f;
+    public float panSpeed = 40f;
     public float panBorderThickness = 5f;
 
     public float ScrollSpeed = 5f;

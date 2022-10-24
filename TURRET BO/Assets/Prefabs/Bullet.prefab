@@ -110,5 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 70
   damage: 50
-  ExplosionRadius: 0
+  ExplosionRadius: 100
   impactEffect: {fileID: 6172613187215418216, guid: 66f509ee2bf101d41a148e1ccaf0f906, type: 3}
+  arcHeight: 0
+  height: 0
+  isMortar: 1

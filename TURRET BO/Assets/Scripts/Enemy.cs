@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
         target = waypoints.points[0];
     }
 
-    public void TakeDamege (float amount)
+    public void TakeDamage (float amount)
     {
         health -= amount;
 
@@ -38,9 +38,9 @@ public class Enemy : MonoBehaviour
 
     void Die ()
     {
+     //   Debug.Log("die");
         PlayerStats.Money += value;
         Destroy(gameObject);
-
         //gameObject effect = (gameObject)Instantiate(DeathEffect, )
     }
 

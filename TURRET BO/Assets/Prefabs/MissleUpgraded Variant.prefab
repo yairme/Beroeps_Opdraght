@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 3211549880296871651, guid: 94139b73dbd412c4e9cf525b32c212e7, type: 3}
     - target: {fileID: 3161435863389958473, guid: 3851f4d4b45b42246888659871e4d3c3, type: 3}
       propertyPath: ExplosionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3851f4d4b45b42246888659871e4d3c3, type: 3}

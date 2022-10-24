@@ -197,6 +197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1264259850206754465, guid: 37d839aae35cb4a4980911c8a17aa576, type: 3}
+      propertyPath: TimeBetweenDrill
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1606935275619851132, guid: 37d839aae35cb4a4980911c8a17aa576, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -227,7 +231,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b671b2a47a89a5148a7aa65e7dcceeef, type: 2}
     - target: {fileID: 1606935276741302211, guid: 37d839aae35cb4a4980911c8a17aa576, type: 3}
       propertyPath: m_Name
-      value: oilpumpUpgraded
+      value: oilpumpUpgraded Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1606935276741302215, guid: 37d839aae35cb4a4980911c8a17aa576, type: 3}
       propertyPath: m_RootOrder

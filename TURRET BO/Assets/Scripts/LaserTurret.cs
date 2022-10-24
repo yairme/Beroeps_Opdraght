@@ -73,7 +73,7 @@ using UnityEngine;
                 {
                     lineRenderer.enabled = false;
                     ImpactEffect.GetComponent<ParticleSystem>().Stop();
-                    impactLight.enabled = false;
+                    //impactLight.enabled = false;
                     //ImpactEffect.GetComponent<ParticleSystem>().Stop();
                 }
             }
@@ -106,7 +106,7 @@ using UnityEngine;
     }
         void Laser ()
         {
-        target.GetComponent<Enemy>().TakeDamege(damegeOverTime * Time.deltaTime);
+        target.GetComponent<Enemy>().TakeDamage(damegeOverTime * Time.deltaTime);
 
         if (!lineRenderer.enabled)
         {
@@ -116,7 +116,7 @@ using UnityEngine;
             //laserEffect.transform.parent = target.transform;
             //laserEffect.Play();
             //this.ImpactEffect.Play();
-            impactLight.enabled = true;
+            //impactLight.enabled = true;
             //keeps the particles from not dying
         }
             ImpactEffect.GetComponent <ParticleSystem>().Play();
